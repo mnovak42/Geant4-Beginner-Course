@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_9aeb88e5faf1fdaa519fbeb8fed1c19e" kind="dir">
+    <compoundname>/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/preliminaries</compoundname>
+    <innerdir refid="dir_e0e188c8e45e11717f2eafbbcd13fdc9">/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/preliminaries/cpp-interface</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/preliminaries/"/>
+  </compounddef>
+</doxygen>

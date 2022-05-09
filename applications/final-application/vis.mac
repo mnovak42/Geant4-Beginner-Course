@@ -1,0 +1,43 @@
+# ******************************************************************************
+# This Geant4 macro file contains the very simply visualisation settings that
+# we used during the course. Your can execute this macro file (as any other)
+# from the user interface session (both from "terminal" and form "QT") as
+# /control/execute vis.mac
+# Please note, that since we draw the geometry in this macro the geometry needs
+# to be created i.e. /run/initialize command needs to be invoked before. Also
+# note, that you need to specify the correct location of the macro file relative
+# to your executable.
+# ******************************************************************************
+
+# ------------------------------------------------------------------------------
+# Use this open statement to create an OpenGL view:
+/vis/open OGL
+
+# ------------------------------------------------------------------------------
+# Draw the geometry
+/vis/drawVolume
+
+# ------------------------------------------------------------------------------
+# Set the World volume invisible
+/vis/geometry/set/visibility logic-World 0  false
+
+# ------------------------------------------------------------------------------
+/vis/geometry/set/colour logic-Target 0 0 0 255 0.3
+/vis/viewer/set/style surface
+
+# ------------------------------------------------------------------------------
+# Add axes (orientation) and a scale (size)
+/vis/scene/add/axes
+/vis/scene/add/scale
+
+# ------------------------------------------------------------------------------
+# Add (smooth) trajectories
+/vis/scene/add/trajectories smooth
+
+# ------------------------------------------------------------------------------
+# Set to accumulate trajectories up to 100 events
+/vis/scene/endOfEventAction accumulate 100
+
+# ------------------------------------------------------------------------------
+# Set the view point in terms angles
+/vis/viewer/set/viewpointThetaPhi -40 -50

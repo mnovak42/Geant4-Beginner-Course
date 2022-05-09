@@ -1,0 +1,145 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="_hist_8cc" kind="file" language="C++">
+    <compoundname>Hist.cc</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Hist.hh&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/><sp/>&lt;cstdio&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal">Hist::Hist(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>G4String&amp;<sp/>fname,<sp/>G4double<sp/>min,<sp/>G4double<sp/>max,<sp/>G4int<sp/>numbin)<sp/></highlight></codeline>
+<codeline lineno="6"><highlight class="normal">:<sp/>fFileName(fname),<sp/></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/>fMin(min),<sp/></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/>fMax(max),<sp/></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/>fDelta(0.),<sp/></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/>fInvDelta(1.),<sp/></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/>fSum(0.),</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/>fNumBins(numbin)<sp/>{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/>fDelta<sp/><sp/><sp/><sp/>=<sp/>(fMax<sp/>-<sp/>fMin)<sp/>/<sp/>fNumBins;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/>fInvDelta<sp/>=<sp/>1./fDelta;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/>Initialize();</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal">Hist::Hist(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>G4String&amp;<sp/>fname,<sp/>G4double<sp/>min,<sp/>G4double<sp/>max,<sp/>G4double<sp/>delta)</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">:<sp/>fFileName(fname),<sp/></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/>fMin(min),<sp/></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/>fMax(max),<sp/></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/>fDelta(delta),<sp/></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/>fInvDelta(1.),<sp/></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/>fSum(0.),</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/>fNumBins(0)<sp/>{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/>fInvDelta<sp/>=<sp/>1./fDelta;<sp/><sp/></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/>fNumBins<sp/>=<sp/>(G4int)((fMax<sp/>-<sp/>fMin)<sp/>/<sp/>(fDelta))<sp/>+<sp/>1.0;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/>Initialize();</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Hist::Initialize()<sp/>{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/>fx.resize(fNumBins,<sp/>0.0);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/>fy.resize(fNumBins,<sp/>0.0);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(G4int<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>fNumBins;<sp/>++i)<sp/>{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>fx[i]<sp/>=<sp/>fMin<sp/>+<sp/>i<sp/>*<sp/>fDelta;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/>fSum<sp/>=<sp/>0.0;<sp/><sp/></highlight></codeline>
+<codeline lineno="39"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Hist::Fill(G4double<sp/>x)<sp/>{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(x&lt;fMin)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/>G4int<sp/>indx<sp/>=<sp/>(x==fMax)<sp/>?<sp/>fNumBins-1<sp/>:<sp/>(G4int)((x<sp/>-<sp/>fMin)<sp/>*<sp/>fInvDelta);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="comment">/*<sp/><sp/></highlight></codeline>
+<codeline lineno="45"><highlight class="comment"><sp/><sp/>if<sp/>(indx<sp/>&lt;<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="46"><highlight class="comment"><sp/><sp/><sp/><sp/>G4cerr<sp/>&lt;&lt;<sp/>&quot;\n<sp/>*****<sp/>ERROR<sp/>in<sp/>Hist::FILL<sp/><sp/>=&gt;<sp/><sp/>x<sp/>=<sp/>&quot;<sp/></highlight></codeline>
+<codeline lineno="47"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>x<sp/>&lt;&lt;<sp/>&quot;<sp/>&lt;<sp/>fMin<sp/>=<sp/>&quot;<sp/>&lt;&lt;<sp/>fMin<sp/></highlight></codeline>
+<codeline lineno="48"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>G4endl;</highlight></codeline>
+<codeline lineno="49"><highlight class="comment"><sp/><sp/><sp/><sp/>exit(1);</highlight></codeline>
+<codeline lineno="50"><highlight class="comment"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="51"><highlight class="comment">*/</highlight><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(indx&gt;-1<sp/>&amp;&amp;<sp/>indx&lt;fNumBins)<sp/>{<sp/><sp/></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>fy[indx]<sp/>+=<sp/>1.0;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>fSum<sp/><sp/><sp/><sp/><sp/>+=<sp/>1.0;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="56"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Hist::Fill(G4double<sp/>x,<sp/>G4double<sp/>w)<sp/>{</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(x&lt;fMin)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/>G4int<sp/>indx<sp/>=<sp/>(x==fMax)<sp/>?<sp/>fNumBins-1<sp/>:<sp/>(G4int)((x<sp/>-<sp/>fMin)<sp/>*<sp/>fInvDelta);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="63"><highlight class="comment"><sp/><sp/>if<sp/>(indx<sp/>&lt;<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="64"><highlight class="comment"><sp/><sp/><sp/><sp/>G4cerr<sp/>&lt;&lt;<sp/>&quot;\n<sp/>*****<sp/>ERROR<sp/>in<sp/>Hist::FILL<sp/><sp/>=&gt;<sp/><sp/>x<sp/>=<sp/>&quot;<sp/></highlight></codeline>
+<codeline lineno="65"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>x<sp/>&lt;&lt;<sp/>&quot;<sp/>&lt;<sp/>fMin<sp/>=<sp/>&quot;<sp/>&lt;&lt;<sp/>fMin<sp/></highlight></codeline>
+<codeline lineno="66"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>G4endl;</highlight></codeline>
+<codeline lineno="67"><highlight class="comment"><sp/><sp/><sp/><sp/>exit(1);</highlight></codeline>
+<codeline lineno="68"><highlight class="comment"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="69"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(indx&gt;-1<sp/>&amp;&amp;<sp/>indx&lt;fNumBins)<sp/>{<sp/><sp/></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>fy[indx]<sp/>+=<sp/>w;<sp/></highlight><highlight class="comment">//1.0<sp/>*<sp/>w;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>fSum<sp/><sp/><sp/><sp/><sp/>+=<sp/>w;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="74"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Hist::WriteToFile(G4bool<sp/>isNorm)<sp/>{</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/>FILE*<sp/>f<sp/>=<sp/>fopen(fFileName,<sp/></highlight><highlight class="stringliteral">&quot;w&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!f)<sp/>{</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>G4cerr<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n<sp/>*****<sp/>ERROR<sp/>in<sp/>Hist::WriteToFile<sp/><sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>cannot<sp/>create<sp/>the<sp/>file<sp/>=<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>fFileName</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>G4endl;<sp/></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>exit(1);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/>G4double<sp/>norm<sp/>=<sp/>1.0;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(isNorm)<sp/>{</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>norm<sp/><sp/>=<sp/>1.<sp/>/<sp/>(fSum*fDelta);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(G4int<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>fNumBins;<sp/>++i)<sp/>{</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>fprintf(f,<sp/></highlight><highlight class="stringliteral">&quot;%d\t%.8g\t%.8g\n&quot;</highlight><highlight class="normal">,<sp/>i,<sp/>fx[i]<sp/>+<sp/>0.5<sp/>*<sp/>fDelta,<sp/>fy[i]<sp/>*<sp/>norm);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/>fclose(f);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Hist::WriteToFile(G4double<sp/>norm)<sp/>{</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/>FILE*<sp/>f<sp/>=<sp/>fopen(fFileName,<sp/></highlight><highlight class="stringliteral">&quot;w&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!f)<sp/>{</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>G4cerr<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n<sp/>*****<sp/>ERROR<sp/>in<sp/>Hist::WriteToFile<sp/><sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>cannot<sp/>create<sp/>the<sp/>file<sp/>=<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>fFileName<sp/></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>G4endl;<sp/></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>exit(1);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(G4int<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>fNumBins;<sp/>++i)<sp/>{</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/>fprintf(f,<sp/></highlight><highlight class="stringliteral">&quot;%d\t%.8g\t%.8g\n&quot;</highlight><highlight class="normal">,<sp/>i,<sp/>fx[i]<sp/>+<sp/>0.5<sp/>*<sp/>fDelta,<sp/>fy[i]<sp/>*<sp/>norm);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/>fclose(f);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Hist::Add(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_hist" kindref="compound">Hist</ref>*<sp/>hist)<sp/>{</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(fNumBins<sp/>!=<sp/>hist-&gt;GetNumBins()<sp/>||<sp/></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>fMin<sp/><sp/><sp/><sp/><sp/>!=<sp/>hist-&gt;GetMin()<sp/>||<sp/></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>fMax<sp/><sp/><sp/><sp/><sp/>!=<sp/>hist-&gt;GetMax())<sp/>{</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/>G4cerr<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n<sp/>*****<sp/>ERROR<sp/>in<sp/>Hist::Add<sp/><sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>histograms<sp/>have<sp/>different<sp/>dimensions<sp/>!<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>G4endl;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(G4int<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>fNumBins;<sp/>++i)<sp/>{</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/>fy[i]<sp/>+=<sp/>hist-&gt;GetY()[i];</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/>}<sp/></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/>fSum<sp/>+=<sp/>hist-&gt;GetSum();</highlight></codeline>
+<codeline lineno="121"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/src/Hist.cc"/>
+  </compounddef>
+</doxygen>

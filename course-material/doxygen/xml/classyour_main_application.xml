@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classyour_main_application" kind="class" language="C++" prot="public">
+    <compoundname>yourMainApplication</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>M. Novak </para>
+</simplesect>
+<simplesect kind="date"><para>December 2019</para>
+</simplesect>
+The main function of this <computeroutput>Geant4</computeroutput> user application. </para>
+    </detaileddescription>
+    <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/yourMainApplication.cc" line="31" column="1"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

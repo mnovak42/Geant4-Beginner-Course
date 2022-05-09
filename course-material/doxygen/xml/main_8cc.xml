@@ -1,0 +1,128 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="main_8cc" kind="file" language="C++">
+    <compoundname>main.cc</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="main_8cc_1a49decf2e106927029ac1fbf2854a4bd7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Print</definition>
+        <argsstring>(VShape2D *sh)</argsstring>
+        <name>Print</name>
+        <param>
+          <type><ref refid="class_v_shape2_d" kindref="compound">VShape2D</ref> *</type>
+          <declname>sh</declname>
+        </param>
+        <briefdescription>
+<para>M. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Novak: the main program that actually shows that independently from the actual type of the 2D shape, they all implement the same <computeroutput><ref refid="class_v_shape2_d" kindref="compound">VShape2D</ref></computeroutput> interface with its pure virtual <computeroutput>Area</computeroutput> interface method.</para>
+<para>compile: g++ -Iinclude -std=c++11 -o run main.cc execute: ./run </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/preliminaries/cpp-interface/main.cc" line="85" column="6" bodyfile="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/preliminaries/cpp-interface/main.cc" bodystart="85" bodyend="90" declfile="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/preliminaries/cpp-interface/main.cc" declline="24" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="main_8cc_1ae66f6b31b5ad750f1fe042a706a4e3d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int main</definition>
+        <argsstring>()</argsstring>
+        <name>main</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/preliminaries/cpp-interface/main.cc" line="27" column="5" bodyfile="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/preliminaries/cpp-interface/main.cc" bodystart="27" bodyend="81"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/>include<sp/>the<sp/>definitions<sp/>of<sp/>the<sp/>`Square`<sp/>and<sp/>`Circle`<sp/>2D<sp/>shapes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_square_8hh" kindref="compound">Square.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_circle_8hh" kindref="compound">Circle.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">//<sp/>include<sp/>the<sp/>definition<sp/>of<sp/>the<sp/>2D<sp/>shape<sp/>base<sp/>class<sp/>(actually<sp/>already<sp/>in<sp/>with<sp/>`Square.hh`)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_v_shape2_d_8hh" kindref="compound">VShape2D.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">//<sp/>standard<sp/>includes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">//<sp/>define<sp/>a<sp/>simple<sp/>auxiliary<sp/>function<sp/>for<sp/>printing<sp/>information<sp/>(implemented<sp/>below)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Print(<ref refid="class_v_shape2_d" kindref="compound">VShape2D</ref>*<sp/>sh);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="comment">//<sp/>the<sp/>main<sp/>funtion</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="your_main_application_8cc_1a3c04138a5bfe5d72780bb7e82a18e627" kindref="member">main</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>========================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>1.<sp/>Construct<sp/>a<sp/>`Squre`<sp/>and<sp/>a<sp/>`Circle`<sp/>and<sp/>print<sp/>their<sp/>properties:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>-<sp/>NOTE:<sp/>we<sp/>will<sp/>use<sp/>now<sp/>directly<sp/>the<sp/>derived<sp/>object<sp/>pointers</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><ref refid="class_square" kindref="compound">Square</ref>*<sp/>sq1<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_square" kindref="compound">Square</ref>(2.0);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><ref refid="class_circle" kindref="compound">Circle</ref>*<sp/>cr1<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_circle" kindref="compound">Circle</ref>(3.0);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>then<sp/>print<sp/>their<sp/>properties</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n<sp/><sp/>===<sp/>Using<sp/>directly<sp/>the<sp/>DERIVED<sp/>object<sp/>pointers<sp/>===<sp/>\n&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>Area<sp/>of<sp/>sq1<sp/><sp/><sp/>=<sp/>&quot;</highlight><highlight class="normal"><sp/><sp/><sp/>&lt;&lt;<sp/>sq1-&gt;<ref refid="class_square_1a1f441aa115566d3c149c016b0d9181a0" kindref="member">Area</ref>()</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>Perim.<sp/>of<sp/>sq1<sp/>=<sp/>&quot;</highlight><highlight class="normal"><sp/><sp/><sp/>&lt;&lt;<sp/>sq1-&gt;<ref refid="class_square_1aa432e12bd2ca6c98164ea3d12aadc625" kindref="member">Perimeter</ref>()</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>name<sp/>=<sp/>&quot;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>sq1-&gt;GetName()</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>Area<sp/>of<sp/>cr1<sp/><sp/><sp/>=<sp/>&quot;</highlight><highlight class="normal"><sp/><sp/><sp/>&lt;&lt;<sp/>cr1-&gt;<ref refid="class_circle_1a86ac61f5e826f24c2b338362fc14197e" kindref="member">Area</ref>()</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>Perim.<sp/>of<sp/>cr1<sp/>=<sp/>&quot;</highlight><highlight class="normal"><sp/><sp/><sp/>&lt;&lt;<sp/>cr1-&gt;<ref refid="class_v_shape2_d_1a15a643173e0c2581124f6bd2e139a06e" kindref="member">Perimeter</ref>()</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>name<sp/>=<sp/>&quot;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>cr1-&gt;GetName()</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>========================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>2.<sp/>Actually<sp/>both<sp/>different<sp/>objects<sp/>are<sp/>2D<sp/>shapes<sp/>as<sp/>well:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>-<sp/>we<sp/>can<sp/>store<sp/>their<sp/>pointers<sp/>in<sp/>a<sp/>`VShape2D`<sp/>pointer`</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>-<sp/>the<sp/>proper<sp/>interface<sp/>implementation<sp/>is<sp/>invoked<sp/>at<sp/>run-time<sp/>depending</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>on<sp/>if<sp/>the<sp/>2D<sp/>shape<sp/>is<sp/>actually<sp/>a<sp/>`Square`<sp/>or<sp/>a<sp/>`Circle`</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n<sp/><sp/>===<sp/>Using<sp/>the<sp/>BASE<sp/>and<sp/>the<sp/>common<sp/>Print<sp/>function<sp/>now<sp/>===<sp/>\n&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><ref refid="class_v_shape2_d" kindref="compound">VShape2D</ref>*<sp/>shape;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/>shape<sp/>=<sp/>sq1;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/>Print(shape);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/>shape<sp/>=<sp/>cr1;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/>Print(shape);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>NOTE:<sp/>we<sp/>could<sp/>simple<sp/>write<sp/>here<sp/>the<sp/>2<sp/>lines<sp/>below<sp/>but<sp/>it&apos;s<sp/>mpre<sp/>verbose<sp/>above</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Print(sq1);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Print(cr1);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>========================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>3.<sp/>This<sp/>(abstraction)<sp/>actually<sp/>makes<sp/>possible:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>-<sp/>to<sp/>implement<sp/>the<sp/>rest<sp/>of<sp/>the<sp/>code<sp/>without<sp/>even<sp/>knowing<sp/>what<sp/>2D<sp/>shapes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>will<sp/>be<sp/>eventually<sp/>used<sp/>since<sp/>we<sp/>can<sp/>be<sp/>sure,<sp/>that<sp/>independently<sp/>from</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>their<sp/>actual<sp/>type,<sp/>all<sp/>will<sp/>(must)<sp/>give<sp/>back<sp/>their<sp/>area<sp/>when<sp/>the<sp/>`Area`</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>interface<sp/>method<sp/>is<sp/>invokded</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>-<sp/>moreover,<sp/>since<sp/>all<sp/>of<sp/>them<sp/>are<sp/>actually<sp/>2D<sp/>shapes<sp/>(i.e.<sp/>derived<sp/>from<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>`VShape2D`<sp/>base<sp/>class),<sp/>we<sp/>can<sp/>store<sp/>all<sp/>different<sp/>2D<sp/>shapes<sp/>in<sp/>a<sp/>single</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>container,<sp/>iterate<sp/>over<sp/>them,<sp/>calling<sp/>their<sp/>`Area`<sp/>interface<sp/>methods<sp/>will</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>always<sp/>invoke<sp/>the<sp/>apropriate<sp/>implementation.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n<sp/><sp/>===<sp/>Using<sp/>the<sp/>BASE<sp/>in<sp/>a<sp/>(vector)container<sp/>now<sp/><sp/>and<sp/>the<sp/>common<sp/>Print<sp/>function<sp/>===<sp/>\n&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/>std::vector&lt;VShape2D*&gt;<sp/>vect;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/>vect.push_back(sq1);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/>vect.push_back(cr1);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>NOTE:<sp/>we<sp/>could<sp/>use<sp/>a<sp/>nicer<sp/>way<sp/>of<sp/>iterating<sp/>over<sp/>the<sp/>vector<sp/>but<sp/>keep<sp/>it<sp/>simple</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(std::size_t<sp/>i=0;<sp/>i&lt;vect.size();<sp/>++i)<sp/>{</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>Print(vect[i]);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="comment">//<sp/>implementation<sp/>of<sp/>the<sp/>auxiliary<sp/>print<sp/>method</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Print(<ref refid="class_v_shape2_d" kindref="compound">VShape2D</ref>*<sp/>sh)<sp/>{</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>Area<sp/><sp/><sp/>=<sp/>&quot;</highlight><highlight class="normal"><sp/><sp/><sp/>&lt;&lt;<sp/>sh-&gt;<ref refid="class_v_shape2_d_1a3c385a0963ad684273a58f81db92254a" kindref="member">Area</ref>()</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>Perim.<sp/>=<sp/>&quot;</highlight><highlight class="normal"><sp/><sp/><sp/>&lt;&lt;<sp/>sh-&gt;<ref refid="class_v_shape2_d_1a15a643173e0c2581124f6bd2e139a06e" kindref="member">Perimeter</ref>()</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>name<sp/><sp/><sp/>=<sp/>&quot;</highlight><highlight class="normal"><sp/><sp/><sp/>&lt;&lt;<sp/>sh-&gt;GetName()</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/preliminaries/cpp-interface/main.cc"/>
+  </compounddef>
+</doxygen>

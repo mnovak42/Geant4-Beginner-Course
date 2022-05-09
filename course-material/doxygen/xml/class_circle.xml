@@ -1,0 +1,117 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="class_circle" kind="class" language="C++" prot="public">
+    <compoundname>Circle</compoundname>
+    <basecompoundref refid="class_v_shape2_d" prot="public" virt="non-virtual">VShape2D</basecompoundref>
+    <includes refid="_circle_8hh" local="no">Circle.hh</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_circle_1ab52835004fbc01f76f772942f4acbc93" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Circle::fRadius</definition>
+        <argsstring></argsstring>
+        <name>fRadius</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/preliminaries/cpp-interface/include/Circle.hh" line="56" column="11" bodyfile="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/preliminaries/cpp-interface/include/Circle.hh" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_circle_1ad5677716e3459e15c8c21a37c12b2f95" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Circle::Circle</definition>
+        <argsstring>(double lradius)</argsstring>
+        <name>Circle</name>
+        <param>
+          <type>double</type>
+          <declname>lradius</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/preliminaries/cpp-interface/include/Circle.hh" line="26" column="3" bodyfile="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/preliminaries/cpp-interface/include/Circle.hh" bodystart="26" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="class_circle_1ae3f30436e645d73e368e8ee55f8d1650" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Circle::~Circle</definition>
+        <argsstring>()</argsstring>
+        <name>~Circle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/preliminaries/cpp-interface/include/Circle.hh" line="29" column="3" bodyfile="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/preliminaries/cpp-interface/include/Circle.hh" bodystart="29" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="class_circle_1a86ac61f5e826f24c2b338362fc14197e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>double</type>
+        <definition>double Circle::Area</definition>
+        <argsstring>() override</argsstring>
+        <name>Area</name>
+        <reimplements refid="class_v_shape2_d_1a3c385a0963ad684273a58f81db92254a">Area</reimplements>
+        <briefdescription>
+<para>Actual implementation of the area computation interface method of the base class. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_circle" kindref="compound">Circle</ref> <bold>must implement</bold> the <ref refid="class_v_shape2_d_1a3c385a0963ad684273a58f81db92254a" kindref="member">VShape2D::Area</ref> base class method since that&apos;s a <bold>pure virtual method</bold>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/preliminaries/cpp-interface/include/Circle.hh" line="44" column="10" bodyfile="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/preliminaries/cpp-interface/include/Circle.hh" bodystart="44" bodyend="47"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Derived class that implements the <ref refid="class_v_shape2_d" kindref="compound">VShape2D</ref> interface for Circle-s. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>M. Novak </para>
+</simplesect>
+<simplesect kind="date"><para>May 2022 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Circle</label>
+        <link refid="class_circle"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>VShape2D</label>
+        <link refid="class_v_shape2_d"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Circle</label>
+        <link refid="class_circle"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>VShape2D</label>
+        <link refid="class_v_shape2_d"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/preliminaries/cpp-interface/include/Circle.hh" line="20" column="1" bodyfile="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/preliminaries/cpp-interface/include/Circle.hh" bodystart="20" bodyend="58"/>
+    <listofallmembers>
+      <member refid="class_circle_1a86ac61f5e826f24c2b338362fc14197e" prot="public" virt="virtual"><scope>Circle</scope><name>Area</name></member>
+      <member refid="class_circle_1ad5677716e3459e15c8c21a37c12b2f95" prot="public" virt="non-virtual"><scope>Circle</scope><name>Circle</name></member>
+      <member refid="class_v_shape2_d_1a58711c52b6ddbf714dcf3d71055293d2" prot="private" virt="non-virtual"><scope>Circle</scope><name>fName</name></member>
+      <member refid="class_circle_1ab52835004fbc01f76f772942f4acbc93" prot="private" virt="non-virtual"><scope>Circle</scope><name>fRadius</name></member>
+      <member refid="class_v_shape2_d_1ac40f961d36ef68fce3adf87f6fd3bd34" prot="public" virt="non-virtual"><scope>Circle</scope><name>GetName</name></member>
+      <member refid="class_v_shape2_d_1a15a643173e0c2581124f6bd2e139a06e" prot="public" virt="virtual"><scope>Circle</scope><name>Perimeter</name></member>
+      <member refid="class_v_shape2_d_1af437d1216aa29be49a9dcad89c95b4af" prot="public" virt="non-virtual"><scope>Circle</scope><name>VShape2D</name></member>
+      <member refid="class_circle_1ae3f30436e645d73e368e8ee55f8d1650" prot="public" virt="non-virtual"><scope>Circle</scope><name>~Circle</name></member>
+      <member refid="class_v_shape2_d_1ac9fb57adc9dc2afee0d68e9b5e56b26d" prot="public" virt="virtual"><scope>Circle</scope><name>~VShape2D</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,122 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="_your_run_8hh" kind="file" language="C++">
+    <compoundname>YourRun.hh</compoundname>
+    <innerclass refid="class_your_run" prot="public">YourRun</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Your<sp/>(thread<sp/>local)<sp/>run<sp/>global<sp/>data:<sp/>an<sp/>instance<sp/>of<sp/>this<sp/>object<sp/>will<sp/>be</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>automatically<sp/>generated<sp/>by<sp/>the<sp/>RunManager<sp/>(for<sp/>each<sp/>worker<sp/>thread)<sp/>by<sp/>calling</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>your<sp/>RunAction::GenerateRun<sp/>interface<sp/>method.<sp/>At<sp/>the<sp/>end<sp/>of<sp/>the<sp/>Run,<sp/>these</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>(thread<sp/>local)<sp/>Run<sp/>global<sp/>intances<sp/>will<sp/>be<sp/>merged<sp/>a<sp/>global<sp/>intance<sp/>(the<sp/>one</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>that<sp/>belongs<sp/>to<sp/>the<sp/>Master<sp/>RunManager),<sp/>according<sp/>to<sp/>your<sp/>implementation<sp/>of</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/>the<sp/>Merge<sp/>interface<sp/>method.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/>The<sp/>appropriate<sp/>(thread<sp/>local)<sp/>instance<sp/>of<sp/>this<sp/>object<sp/>will<sp/>be<sp/>available/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//<sp/>obtainable<sp/>in<sp/>the<sp/>appropriate<sp/>(also<sp/>thread<sp/>local)<sp/>EventAction<sp/>Begin-<sp/>and</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/>End-OfEventAction<sp/>interface<sp/>methods<sp/>where<sp/>the<sp/>(thread<sp/>local)<sp/>object<sp/>will<sp/>be</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>populated<sp/>by<sp/>data<sp/>from<sp/>at<sp/>the<sp/>end<sp/>of<sp/>each<sp/>events.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>YOURRUN_HH</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>YOURRUN_HH</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;G4Run.hh&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Hist.hh&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">//<sp/>forward<sp/>declarations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_your_detector_construction" kindref="compound">YourDetectorConstruction</ref>;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_your_primary_generator_action" kindref="compound">YourPrimaryGeneratorAction</ref>;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="class_your_run" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_your_run" kindref="compound">YourRun</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>G4Run<sp/>{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Method<sp/>declaration:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>CTR:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_your_run" kindref="compound">YourRun</ref>(<ref refid="class_your_detector_construction" kindref="compound">YourDetectorConstruction</ref>*<sp/>det,<sp/><ref refid="class_your_primary_generator_action" kindref="compound">YourPrimaryGeneratorAction</ref>*<sp/>prim);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>~<ref refid="class_your_run" kindref="compound">YourRun</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_your_run_1a214f4ffd2b6631e91b146673ca366731" kindref="member">Merge</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>G4Run*<sp/>run)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Additional<sp/>custom<sp/>methods:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Method<sp/>that<sp/>we<sp/>will<sp/>call<sp/>from<sp/>the<sp/>master<sp/>run<sp/>action<sp/>at<sp/>the<sp/>end<sp/>to<sp/>compute<sp/>final<sp/>quantities<sp/>using<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>its<sp/>run<sp/>global<sp/>Run<sp/>object<sp/>into<sp/>which<sp/>all<sp/>thread<sp/>local<sp/>run<sp/>global<sp/>run<sp/>object<sp/>instance<sp/>has<sp/>already<sp/>been<sp/>merged</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>(when<sp/>YourRunAction::EndOfRunAction()<sp/>is<sp/>invoked).</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/>EndOfRunSummary();</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Public<sp/>methods<sp/>(will<sp/>be<sp/>used<sp/>by<sp/>the<sp/>EventAction)<sp/>to<sp/>add<sp/>energy<sp/>deposit<sp/>and</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>track<sp/>length<sp/>data<sp/>after<sp/>each<sp/>events.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>AddEnergyDepositPerEvent(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>G4double<sp/>edep)<sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>fEdepInTarget<sp/><sp/>+=<sp/>edep;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>fEdepInTarget2<sp/>+=<sp/>edep*edep;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>AddChTrackLengthPerEvent(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>G4double<sp/>length)<sp/>{</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fChargedTrackLengthInTarget<sp/><sp/>+=<sp/>length;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fChargedTrackLengthInTarget2<sp/>+=<sp/>length*length;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Public<sp/>method<sp/>(will<sp/>be<sp/>used<sp/>by<sp/>the<sp/>EventAction)<sp/>to<sp/>fill<sp/>the<sp/>energy<sp/>deposit</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>histogram<sp/>after<sp/>each<sp/>event<sp/>(in<sp/>the<sp/>EndOfEventAction)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>FillEdepHistogram(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>G4double<sp/>edep)<sp/>{</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>fIsActiveEdepHistogram<sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fEdepHistogram-&gt;Fill(edep);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Public<sp/>method<sp/>to<sp/>set<sp/>properties<sp/>of<sp/>the<sp/>energy<sp/>deposit<sp/>histogram:<sp/>this<sp/>will</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>be<sp/>invoked<sp/>by<sp/>the<sp/>RunAction<sp/>in<sp/>its<sp/>BeginOfRunAction<sp/>method<sp/>to<sp/>set<sp/>all</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>properties<sp/>of<sp/>the<sp/>histogram<sp/>before<sp/>the<sp/>simulation<sp/>starts<sp/>(only<sp/>if<sp/>the<sp/>user</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>invoked<sp/>the<sp/>corresponding<sp/>UI<sp/>command<sp/>i.e.<sp/>/yourApp/runAction/edepHisto<sp/>).</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>A<sp/>flag<sp/>(fIsActiveEdepHisto)<sp/>will<sp/>also<sp/>set<sp/>to<sp/>indicate<sp/>that<sp/>the<sp/>user<sp/>invoked</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>the<sp/>UI<sp/>command<sp/>/yourApp/runAction/edepHisto<sp/>...<sp/>that<sp/>activates<sp/>the<sp/>energy</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>deposit<sp/>histogram.<sp/>The<sp/>flag<sp/>stays<sp/>to<sp/>be<sp/>&apos;false&apos;<sp/>otherwise<sp/>(as<sp/>initialised).</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SetEdepHisto(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>G4String&amp;<sp/>filename,<sp/>G4double<sp/>emin,<sp/>G4double<sp/>emax,<sp/>G4int<sp/>numbins)<sp/>{</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fIsActiveEdepHistogram<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fEdepHistogram-&gt;ReSet(filename,<sp/>emin,<sp/>emax,<sp/>numbins);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Data<sp/>member<sp/>declarations:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>data<sp/>members<sp/>to<sp/>obtain<sp/>some<sp/>information<sp/>needed<sp/>at<sp/>the<sp/>end<sp/>for<sp/>the<sp/>summary</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Note:<sp/>that<sp/>the<sp/>PrimaryGeneratorAction<sp/>is<sp/>not<sp/>set<sp/>to<sp/>the<sp/>master&apos;s<sp/>RunAction</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/>so<sp/>it<sp/>will<sp/>be<sp/>nullptr<sp/>for<sp/>the<sp/>master&apos;s<sp/>YourRun.<sp/>We<sp/>will<sp/>set<sp/>it<sp/>in</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/>the<sp/>Merge.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_your_detector_construction" kindref="compound">YourDetectorConstruction</ref>*<sp/><sp/><sp/><sp/>fYourDetector;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_your_primary_generator_action" kindref="compound">YourPrimaryGeneratorAction</ref>*<sp/><sp/>fYourPrimary;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Run<sp/>global<sp/>data<sp/>members:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>-<sp/>sum<sp/>of<sp/>the<sp/>energy<sp/>deposit<sp/>(charged<sp/>track<sp/>length)<sp/>in<sp/>the<sp/>target<sp/>per<sp/>event</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>-<sp/>and<sp/>sum<sp/>of<sp/>the<sp/>squared<sp/>quantity<sp/>per<sp/>event<sp/>for<sp/>rms<sp/>computation</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/>G4double<sp/>fEdepInTarget;</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/>G4double<sp/>fEdepInTarget2;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/>G4double<sp/>fChargedTrackLengthInTarget;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/>G4double<sp/>fChargedTrackLengthInTarget2;</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Energy<sp/>deposit<sp/>per<sp/>event<sp/>(in<sp/>the<sp/>target)<sp/>histogram<sp/>and<sp/>a<sp/>flag<sp/>to<sp/>indicate</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>if<sp/>this<sp/>histogram<sp/>was<sp/>activated<sp/>(requested)<sp/>by<sp/>the<sp/>user<sp/>invoking<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>corresponding<sp/>custum<sp/>/yourApp/runAction/edepHisto<sp/>UI<sp/>command</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/>G4bool<sp/><sp/><sp/>fIsActiveEdepHistogram;</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_hist" kindref="compound">Hist</ref>*<sp/><sp/><sp/><sp/>fEdepHistogram;</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourRun.hh"/>
+  </compounddef>
+</doxygen>

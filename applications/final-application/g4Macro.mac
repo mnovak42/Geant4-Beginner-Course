@@ -1,0 +1,34 @@
+# ******************************************************************************
+# This is the Geant4 macro file that we used during the development. It does NOT 
+# contain any of the custom UI commands that I introduced after the course to 
+# make our application complete. You can see a more complete macro file in 
+# /experimet/g4Macro_Meroli_100MeV_electron_5p6um_Si.mac 
+# ******************************************************************************
+
+# ------------------------------------------------------------------------------
+# to print the commands 
+/control/verbose 1
+
+# ------------------------------------------------------------------------------  
+# to print information regarding the Run e.g. timing
+/run/verbose 1
+
+# ------------------------------------------------------------------------------  
+# to print out step information after each step 
+## /tracking/verbose 1
+
+# ------------------------------------------------------------------------------
+# initialization of the Run 
+/run/initialize
+
+# ------------------------------------------------------------------------------
+# Set the primary generator (i.e. the Particle Gun) properties:
+# ==============================================================================  
+# set the particle energy to 30 MeV
+/gun/energy 30 MeV
+# set the particle type to electron
+/gun/particle e-
+
+# ------------------------------------------------------------------------------
+# execute the simulation with 10 events (i.e. 10 E_0=30 MeV e^-)
+/run/beamOn 10

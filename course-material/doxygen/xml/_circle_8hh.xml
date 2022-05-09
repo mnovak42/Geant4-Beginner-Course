@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="_circle_8hh" kind="file" language="C++">
+    <compoundname>Circle.hh</compoundname>
+    <innerclass refid="class_circle" prot="public">Circle</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>CIRCLE_HH</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CIRCLE_HH</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>inlcude<sp/>the<sp/>base<sp/>class<sp/>definition</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_v_shape2_d_8hh" kindref="compound">VShape2D.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">//<sp/>square<sp/>is<sp/>a<sp/>2D<sp/>shape</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="class_circle" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_circle" kindref="compound">Circle</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_v_shape2_d" kindref="compound">VShape2D</ref><sp/>{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>constructor:<sp/>requires<sp/>the<sp/>length<sp/>of<sp/>the<sp/>radius</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>-<sp/>it<sp/>calls<sp/>the<sp/>base<sp/>class<sp/>constructor<sp/>by<sp/>passing<sp/>the<sp/>required<sp/>name</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><ref refid="class_circle" kindref="compound">Circle</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>lradius)<sp/>:<sp/><ref refid="class_v_shape2_d" kindref="compound">VShape2D</ref>(</highlight><highlight class="stringliteral">&quot;myCircle&quot;</highlight><highlight class="normal">),<sp/>fRadius(lradius)<sp/>{<sp/>}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>no<sp/>dynamic<sp/>memeory<sp/>allocation<sp/>so<sp/>nothing<sp/>to<sp/>do<sp/>at<sp/>destruction</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/>~<ref refid="class_circle" kindref="compound">Circle</ref>()<sp/>{<sp/>}</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>MUST<sp/>implement<sp/>the<sp/>`Shape2D::Area`<sp/>base<sp/>class<sp/>method<sp/>since<sp/>that&apos;s<sp/>a<sp/>pure</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>virtual/abstract<sp/>method.<sp/>The<sp/>`override`<sp/>keyword<sp/>is<sp/>very<sp/>useful:<sp/>indicates</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>that<sp/>this<sp/>method<sp/>implements<sp/>a<sp/>virtual<sp/>method<sp/>of<sp/>the<sp/>base<sp/>class<sp/>so<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>compiler<sp/>is<sp/>aware<sp/>of<sp/>that</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="class_circle_1a86ac61f5e826f24c2b338362fc14197e" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_circle_1a86ac61f5e826f24c2b338362fc14197e" kindref="member">Area</ref>()</highlight><highlight class="keyword"><sp/>override<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>kPi<sp/>=<sp/>3.14159265359;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>kPi*fRadius*fRadius;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>note:<sp/>we<sp/>decided<sp/>not<sp/>to<sp/>implement<sp/>the<sp/>optional<sp/>`Perimeter`<sp/>interface<sp/>method</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/>so<sp/>its<sp/>default<sp/>base<sp/>class<sp/>implementation<sp/>will<sp/>be<sp/>used<sp/>for<sp/>`Circle`-s!</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>the<sp/>only<sp/>data<sp/>member<sp/>is<sp/>the<sp/>radius<sp/>of<sp/>the<sp/>circle</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><sp/>fRadius;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/></highlight><highlight class="comment">//<sp/>CIRCLE_HH</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/preliminaries/cpp-interface/include/Circle.hh"/>
+  </compounddef>
+</doxygen>

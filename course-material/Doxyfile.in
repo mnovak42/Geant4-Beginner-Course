@@ -1,0 +1,34 @@
+# ==============================================================================
+# author: M. Novak
+# date  : April 2022
+# file  : `Doxyfile.in`
+#
+# Doxygen input configuration file for my `Geant4 Beginner Course` material.
+# ==============================================================================
+
+PROJECT_NAME         = "Geant4 Beginner Course"
+OUTPUT_DIRECTORY     = "doxygen"
+XML_OUTPUT           = "xml"
+INPUT                = ../applications/final-application ../applications/preliminaries
+CITE_BIB_FILES       = source/bibfile
+FILE_PATTERNS        = *.cc *.hh
+GENERATE_LATEX       = NO
+GENERATE_MAN         = NO
+GENERATE_RTF         = NO
+CASE_SENSE_NAMES     = NO
+ENABLE_PREPROCESSING = NO
+GENERATE_HTML        = NO
+GENERATE_XML         = YES
+RECURSIVE            = YES
+QUIET                = YES
+JAVADOC_AUTOBRIEF    = YES
+EXTRACT_PRIVATE      = YES
+EXTRACT_STATIC       = YES
+SHOW_FILES           = YES
+SHOW_NAMESPACES      = YES
+WARN_IF_UNDOCUMENTED = NO
+EXTRA_PACKAGES       = amsmath xr amsfonts
+ALIASES = "rst=\verbatim embed:rst"
+ALIASES += "endrst=\endverbatim"
+ALIASES += "rststar=\verbatim embed:rst:leading-asterisk"
+ALIASES += "endrststar=\endverbatim"

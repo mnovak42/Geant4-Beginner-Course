@@ -1,0 +1,165 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="class_your_detector_messenger" kind="class" language="C++" prot="public">
+    <compoundname>YourDetectorMessenger</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">G4UImessenger</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_your_detector_messenger_1a4cdf33a258a27996f9c56b53dc75f190" prot="private" static="no" mutable="no">
+        <type><ref refid="class_your_detector_construction" kindref="compound">YourDetectorConstruction</ref> *</type>
+        <definition>YourDetectorConstruction* YourDetectorMessenger::fYourDetector</definition>
+        <argsstring></argsstring>
+        <name>fYourDetector</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourDetectorMessenger.hh" line="32" column="31" bodyfile="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourDetectorMessenger.hh" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_your_detector_messenger_1ab0920530772db7cf7c838ad400944a03" prot="private" static="no" mutable="no">
+        <type>G4UIdirectory *</type>
+        <definition>G4UIdirectory* YourDetectorMessenger::fDirCMD</definition>
+        <argsstring></argsstring>
+        <name>fDirCMD</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourDetectorMessenger.hh" line="34" column="31" bodyfile="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourDetectorMessenger.hh" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_your_detector_messenger_1a47cf53ce11420060dce2eada9827c50b" prot="private" static="no" mutable="no">
+        <type>G4UIcmdWithADoubleAndUnit *</type>
+        <definition>G4UIcmdWithADoubleAndUnit* YourDetectorMessenger::fTargetThicknessCMD</definition>
+        <argsstring></argsstring>
+        <name>fTargetThicknessCMD</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourDetectorMessenger.hh" line="35" column="31" bodyfile="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourDetectorMessenger.hh" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_your_detector_messenger_1a93055abbca3d8c00f8f9394706c9b585" prot="private" static="no" mutable="no">
+        <type>G4UIcmdWithAString *</type>
+        <definition>G4UIcmdWithAString* YourDetectorMessenger::fTargetMaterialCMD</definition>
+        <argsstring></argsstring>
+        <name>fTargetMaterialCMD</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourDetectorMessenger.hh" line="36" column="31" bodyfile="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourDetectorMessenger.hh" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_your_detector_messenger_1ae6ed9f0eab066330cd987bb47c6c1e52" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>YourDetectorMessenger::YourDetectorMessenger</definition>
+        <argsstring>(YourDetectorConstruction *det)</argsstring>
+        <name>YourDetectorMessenger</name>
+        <param>
+          <type><ref refid="class_your_detector_construction" kindref="compound">YourDetectorConstruction</ref> *</type>
+          <declname>det</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourDetectorMessenger.hh" line="23" column="5" bodyfile="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/src/YourDetectorMessenger.cc" bodystart="12" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="class_your_detector_messenger_1add5f94cbddba418cf62dc54782093ae1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>YourDetectorMessenger::~YourDetectorMessenger</definition>
+        <argsstring>()</argsstring>
+        <name>~YourDetectorMessenger</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourDetectorMessenger.hh" line="24" column="4" bodyfile="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/src/YourDetectorMessenger.cc" bodystart="46" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="class_your_detector_messenger_1a77acafd9c02bed9c062bd1d8cec6f793" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void YourDetectorMessenger::SetNewValue</definition>
+        <argsstring>(G4UIcommand *, G4String) override</argsstring>
+        <name>SetNewValue</name>
+        <param>
+          <type>G4UIcommand *</type>
+          <defname>command</defname>
+        </param>
+        <param>
+          <type>G4String</type>
+          <defname>newValue</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourDetectorMessenger.hh" line="26" column="10" bodyfile="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/src/YourDetectorMessenger.cc" bodystart="53" bodyend="64"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>YourDetectorMessenger</label>
+        <link refid="class_your_detector_messenger"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>G4UImessenger</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>YourDetectorMessenger</label>
+        <link refid="class_your_detector_messenger"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>fYourDetector</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>G4VUserDetectorConstruction</label>
+      </node>
+      <node id="2">
+        <label>G4UImessenger</label>
+      </node>
+      <node id="3">
+        <label>YourDetectorConstruction</label>
+        <link refid="class_your_detector_construction"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1" relation="usage">
+          <edgelabel>fDetMessenger</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourDetectorMessenger.hh" line="17" column="1" bodyfile="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourDetectorMessenger.hh" bodystart="17" bodyend="38"/>
+    <listofallmembers>
+      <member refid="class_your_detector_messenger_1ab0920530772db7cf7c838ad400944a03" prot="private" virt="non-virtual"><scope>YourDetectorMessenger</scope><name>fDirCMD</name></member>
+      <member refid="class_your_detector_messenger_1a93055abbca3d8c00f8f9394706c9b585" prot="private" virt="non-virtual"><scope>YourDetectorMessenger</scope><name>fTargetMaterialCMD</name></member>
+      <member refid="class_your_detector_messenger_1a47cf53ce11420060dce2eada9827c50b" prot="private" virt="non-virtual"><scope>YourDetectorMessenger</scope><name>fTargetThicknessCMD</name></member>
+      <member refid="class_your_detector_messenger_1a4cdf33a258a27996f9c56b53dc75f190" prot="private" virt="non-virtual"><scope>YourDetectorMessenger</scope><name>fYourDetector</name></member>
+      <member refid="class_your_detector_messenger_1a77acafd9c02bed9c062bd1d8cec6f793" prot="public" virt="non-virtual"><scope>YourDetectorMessenger</scope><name>SetNewValue</name></member>
+      <member refid="class_your_detector_messenger_1ae6ed9f0eab066330cd987bb47c6c1e52" prot="public" virt="non-virtual"><scope>YourDetectorMessenger</scope><name>YourDetectorMessenger</name></member>
+      <member refid="class_your_detector_messenger_1add5f94cbddba418cf62dc54782093ae1" prot="public" virt="non-virtual"><scope>YourDetectorMessenger</scope><name>~YourDetectorMessenger</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

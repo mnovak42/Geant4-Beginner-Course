@@ -1,0 +1,135 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="class_square" kind="class" language="C++" prot="public">
+    <compoundname>Square</compoundname>
+    <basecompoundref refid="class_v_shape2_d" prot="public" virt="non-virtual">VShape2D</basecompoundref>
+    <includes refid="_square_8hh" local="no">Square.hh</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_square_1aff6f957a66206a3539d19b9a441e5bd8" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Square::fSideLength</definition>
+        <argsstring></argsstring>
+        <name>fSideLength</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/preliminaries/cpp-interface/include/Square.hh" line="50" column="11" bodyfile="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/preliminaries/cpp-interface/include/Square.hh" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_square_1ac57e7c45ebfe5271e41e73fcdb20fd83" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Square::Square</definition>
+        <argsstring>(double lside)</argsstring>
+        <name>Square</name>
+        <param>
+          <type>double</type>
+          <declname>lside</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/preliminaries/cpp-interface/include/Square.hh" line="24" column="3" bodyfile="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/preliminaries/cpp-interface/include/Square.hh" bodystart="24" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="class_square_1a90af7ce1060cff7b717ceddb333846b8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Square::~Square</definition>
+        <argsstring>()</argsstring>
+        <name>~Square</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/preliminaries/cpp-interface/include/Square.hh" line="27" column="3" bodyfile="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/preliminaries/cpp-interface/include/Square.hh" bodystart="27" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="class_square_1a1f441aa115566d3c149c016b0d9181a0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>double</type>
+        <definition>double Square::Area</definition>
+        <argsstring>() override</argsstring>
+        <name>Area</name>
+        <reimplements refid="class_v_shape2_d_1a3c385a0963ad684273a58f81db92254a">Area</reimplements>
+        <briefdescription>
+<para>Actual implementation of the area computation interface method of the base class. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_square" kindref="compound">Square</ref> <bold>must implement</bold> the <ref refid="class_v_shape2_d_1a3c385a0963ad684273a58f81db92254a" kindref="member">VShape2D::Area</ref> base class method since that&apos;s a <bold>pure virtual method</bold>.</para>
+<para><simplesect kind="note"><para>The <computeroutput>override</computeroutput> keyword is very useful: indicates that this method implements a virtual method of the base class so the compiler is aware of that intention. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/preliminaries/cpp-interface/include/Square.hh" line="41" column="10" bodyfile="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/preliminaries/cpp-interface/include/Square.hh" bodystart="41" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="class_square_1aa432e12bd2ca6c98164ea3d12aadc625" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>double</type>
+        <definition>double Square::Perimeter</definition>
+        <argsstring>() override</argsstring>
+        <name>Perimeter</name>
+        <reimplements refid="class_v_shape2_d_1a15a643173e0c2581124f6bd2e139a06e">Perimeter</reimplements>
+        <briefdescription>
+<para>The <bold>optional</bold> <computeroutput>Perimeter</computeroutput> interface method implementation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/preliminaries/cpp-interface/include/Square.hh" line="44" column="10" bodyfile="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/preliminaries/cpp-interface/include/Square.hh" bodystart="44" bodyend="44"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Derived class that implements the <ref refid="class_v_shape2_d" kindref="compound">VShape2D</ref> interface for Square-s. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>M. Novak </para>
+</simplesect>
+<simplesect kind="date"><para>May 2022 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Square</label>
+        <link refid="class_square"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>VShape2D</label>
+        <link refid="class_v_shape2_d"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Square</label>
+        <link refid="class_square"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>VShape2D</label>
+        <link refid="class_v_shape2_d"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/preliminaries/cpp-interface/include/Square.hh" line="18" column="1" bodyfile="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/preliminaries/cpp-interface/include/Square.hh" bodystart="18" bodyend="52"/>
+    <listofallmembers>
+      <member refid="class_square_1a1f441aa115566d3c149c016b0d9181a0" prot="public" virt="virtual"><scope>Square</scope><name>Area</name></member>
+      <member refid="class_v_shape2_d_1a58711c52b6ddbf714dcf3d71055293d2" prot="private" virt="non-virtual"><scope>Square</scope><name>fName</name></member>
+      <member refid="class_square_1aff6f957a66206a3539d19b9a441e5bd8" prot="private" virt="non-virtual"><scope>Square</scope><name>fSideLength</name></member>
+      <member refid="class_v_shape2_d_1ac40f961d36ef68fce3adf87f6fd3bd34" prot="public" virt="non-virtual"><scope>Square</scope><name>GetName</name></member>
+      <member refid="class_square_1aa432e12bd2ca6c98164ea3d12aadc625" prot="public" virt="virtual"><scope>Square</scope><name>Perimeter</name></member>
+      <member refid="class_square_1ac57e7c45ebfe5271e41e73fcdb20fd83" prot="public" virt="non-virtual"><scope>Square</scope><name>Square</name></member>
+      <member refid="class_v_shape2_d_1af437d1216aa29be49a9dcad89c95b4af" prot="public" virt="non-virtual"><scope>Square</scope><name>VShape2D</name></member>
+      <member refid="class_square_1a90af7ce1060cff7b717ceddb333846b8" prot="public" virt="non-virtual"><scope>Square</scope><name>~Square</name></member>
+      <member refid="class_v_shape2_d_1ac9fb57adc9dc2afee0d68e9b5e56b26d" prot="public" virt="virtual"><scope>Square</scope><name>~VShape2D</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

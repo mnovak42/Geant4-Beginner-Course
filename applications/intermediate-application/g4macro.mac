@@ -1,0 +1,13 @@
+#
+# Set the tracking verbose to see each simulation step 
+/tracking/verbose 1
+#
+# Run initialization
+/run/initialize
+#
+# Set the primary particle type and energy
+/gun/energy 100 MeV
+/gun/particle e-
+#
+# Execute the simulation with 10 events
+/run/beamOn 10

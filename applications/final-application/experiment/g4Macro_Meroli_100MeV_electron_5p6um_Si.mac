@@ -1,0 +1,62 @@
+# ******************************************************************************
+# This is the Geant4 macro file to simulate the energy loss/deposit distribution
+# in a 5.6 [um] thin silicon when hit (perpendicularly) by 100 [MeV] electrons.
+# The corresponding experimental data are also available under the /experimet dir.
+# ******************************************************************************
+
+# ------------------------------------------------------------------------------
+# to print the commands 
+/control/verbose 1
+
+# ------------------------------------------------------------------------------  
+# to print information regarding the Run e.g. timing
+/run/verbose 1
+
+# ------------------------------------------------------------------------------  
+# to print out step information after each step 
+## /tracking/verbose 1
+
+# ------------------------------------------------------------------------------  
+# set number of worker threads to 4
+/run/numberOfThreads 4
+
+# ------------------------------------------------------------------------------  
+# Your own UI commands defined by "YourDetectorMessenger" to set some of the   
+# properties (thickness, material) of the target:                           
+# ==============================================================================
+# set the target thickness to match the experimental one: 5.6 um
+/yourApp/det/setTargetThickness 5.6 um
+# set the target material to match the experimental one: Silicon
+/yourApp/det/setTargetMaterial G4_Si
+
+# ------------------------------------------------------------------------------  
+# Your own UI command defined by "YourRunActionMessenger" to activate and set    
+# properties of the energy deposit histogram. Parameters are:
+# file-name minimum-energy maximum-energy energy-unit(keV,MeV,GeV) number-of-bins                           
+# ==============================================================================
+/yourApp/runAction/edepHisto Hist_Edep.dat 0.0 10.0 keV 100
+
+# ------------------------------------------------------------------------------
+# initialization of the Run 
+/run/initialize
+
+# ------------------------------------------------------------------------------
+# set the secondary production threshold smaller than the target thickness
+# (Note, this will be discussed during the advanced Geant4 course)
+/run/setCut 1.0 um
+
+# ------------------------------------------------------------------------------
+# Set the primary generator (i.e. the Particle Gun) properties:
+# ==============================================================================  
+# set the particle energy to match the experimental one: 100 MeV
+/gun/energy 100 MeV
+# set the particle type to match the experimental one: electron
+/gun/particle e-
+
+# ------------------------------------------------------------------------------
+# report progress of the simulation at each 100 000 -th event
+/run/printProgress 100000
+
+# ------------------------------------------------------------------------------
+# execute the simulation with 1 000 000 events
+/run/beamOn 1000000

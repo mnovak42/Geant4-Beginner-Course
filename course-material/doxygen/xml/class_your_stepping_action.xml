@@ -1,0 +1,182 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="class_your_stepping_action" kind="class" language="C++" prot="public">
+    <compoundname>YourSteppingAction</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">G4UserSteppingAction</basecompoundref>
+    <includes refid="_your_stepping_action_8hh" local="no">YourSteppingAction.hh</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_your_stepping_action_1aa9a4299c4b8ccb9fffa7a67452db46d0" prot="private" static="no" mutable="no">
+        <type><ref refid="class_your_detector_construction" kindref="compound">YourDetectorConstruction</ref> *</type>
+        <definition>YourDetectorConstruction* YourSteppingAction::fYourDetector</definition>
+        <argsstring></argsstring>
+        <name>fYourDetector</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourSteppingAction.hh" line="53" column="33" bodyfile="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourSteppingAction.hh" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_your_stepping_action_1a951b60942aac62eb57b1c60762024af5" prot="private" static="no" mutable="no">
+        <type><ref refid="class_your_event_action" kindref="compound">YourEventAction</ref> *</type>
+        <definition>YourEventAction* YourSteppingAction::fYourEventAction</definition>
+        <argsstring></argsstring>
+        <name>fYourEventAction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourSteppingAction.hh" line="55" column="33" bodyfile="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourSteppingAction.hh" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_your_stepping_action_1aa585f1f1cbe2bc90b1c103f76790bd0d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>YourSteppingAction::YourSteppingAction</definition>
+        <argsstring>(YourDetectorConstruction *det, YourEventAction *evtAction)</argsstring>
+        <name>YourSteppingAction</name>
+        <param>
+          <type><ref refid="class_your_detector_construction" kindref="compound">YourDetectorConstruction</ref> *</type>
+          <declname>det</declname>
+        </param>
+        <param>
+          <type><ref refid="class_your_event_action" kindref="compound">YourEventAction</ref> *</type>
+          <declname>evtAction</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourSteppingAction.hh" line="33" column="5" bodyfile="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/src/YourSteppingAction.cc" bodystart="10" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="class_your_stepping_action_1a1b1613ebcb8f0cb0a30adeb5ecbdcf7f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>YourSteppingAction::~YourSteppingAction</definition>
+        <argsstring>() override</argsstring>
+        <name>~YourSteppingAction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourSteppingAction.hh" line="34" column="5" bodyfile="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/src/YourSteppingAction.cc" bodystart="16" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_your_stepping_action_1aa2ba6dd9459eac3241894ddd612e9a42" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void YourSteppingAction::UserSteppingAction</definition>
+        <argsstring>(const G4Step *step) override</argsstring>
+        <name>UserSteppingAction</name>
+        <param>
+          <type>const G4Step *</type>
+          <declname>step</declname>
+        </param>
+        <briefdescription>
+<para>Interface metho dthat is called after each simulation steps. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>We do all the fine grane infomation collection in this method that infomation are usually propagated to an auuper elevel, e.g. <ref refid="class_your_event_action" kindref="compound">YourEventAction</ref>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">step</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the <computeroutput>G4Step</computeroutput> object that has just been completed.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="warning"><para>You need to be careful here! Since this method is invoked after each individual simulation step, this is a very perfomance critical point. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourSteppingAction.hh" line="46" column="10" bodyfile="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/src/YourSteppingAction.cc" bodystart="23" bodyend="40"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>M. Novak </para>
+</simplesect>
+<simplesect kind="date"><para>December 2019</para>
+</simplesect>
+Implementation of the <computeroutput>Geant4</computeroutput> <computeroutput>G4UserSteppingAction</computeroutput> <bold>optional interface</bold> for this user application.</para>
+<para>This interface gives the possibility for interacting with the simulation after the complition of the individual simulation steps in its <ref refid="class_your_stepping_action_1aa2ba6dd9459eac3241894ddd612e9a42" kindref="member">UserSteppingAction()</ref> method. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>G4UserSteppingAction</label>
+      </node>
+      <node id="1">
+        <label>YourSteppingAction</label>
+        <link refid="class_your_stepping_action"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="7">
+        <label>YourDetectorMessenger</label>
+        <link refid="class_your_detector_messenger"/>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>fYourDetector</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>G4VUserDetectorConstruction</label>
+      </node>
+      <node id="3">
+        <label>YourEventAction</label>
+        <link refid="class_your_event_action"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>G4UserSteppingAction</label>
+      </node>
+      <node id="8">
+        <label>G4UImessenger</label>
+      </node>
+      <node id="1">
+        <label>YourSteppingAction</label>
+        <link refid="class_your_stepping_action"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>fYourEventAction</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>fYourDetector</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>G4UserEventAction</label>
+      </node>
+      <node id="5">
+        <label>YourDetectorConstruction</label>
+        <link refid="class_your_detector_construction"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>fDetMessenger</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourSteppingAction.hh" line="25" column="1" bodyfile="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourSteppingAction.hh" bodystart="25" bodyend="56"/>
+    <listofallmembers>
+      <member refid="class_your_stepping_action_1aa9a4299c4b8ccb9fffa7a67452db46d0" prot="private" virt="non-virtual"><scope>YourSteppingAction</scope><name>fYourDetector</name></member>
+      <member refid="class_your_stepping_action_1a951b60942aac62eb57b1c60762024af5" prot="private" virt="non-virtual"><scope>YourSteppingAction</scope><name>fYourEventAction</name></member>
+      <member refid="class_your_stepping_action_1aa2ba6dd9459eac3241894ddd612e9a42" prot="public" virt="non-virtual"><scope>YourSteppingAction</scope><name>UserSteppingAction</name></member>
+      <member refid="class_your_stepping_action_1aa585f1f1cbe2bc90b1c103f76790bd0d" prot="public" virt="non-virtual"><scope>YourSteppingAction</scope><name>YourSteppingAction</name></member>
+      <member refid="class_your_stepping_action_1a1b1613ebcb8f0cb0a30adeb5ecbdcf7f" prot="public" virt="non-virtual"><scope>YourSteppingAction</scope><name>~YourSteppingAction</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

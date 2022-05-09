@@ -1,0 +1,376 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="class_your_run" kind="class" language="C++" prot="public">
+    <compoundname>YourRun</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">G4Run</basecompoundref>
+    <includes refid="_your_run_8hh" local="no">YourRun.hh</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_your_run_1ab51992016c0b231ea9caae94bb8ba63e" prot="private" static="no" mutable="no">
+        <type><ref refid="class_your_detector_construction" kindref="compound">YourDetectorConstruction</ref> *</type>
+        <definition>YourDetectorConstruction* YourRun::fYourDetector</definition>
+        <argsstring></argsstring>
+        <name>fYourDetector</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourRun.hh" line="120" column="33" bodyfile="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourRun.hh" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_your_run_1a88c8efaa98f2862dcf378588ca4945ed" prot="private" static="no" mutable="no">
+        <type><ref refid="class_your_primary_generator_action" kindref="compound">YourPrimaryGeneratorAction</ref> *</type>
+        <definition>YourPrimaryGeneratorAction* YourRun::fYourPrimary</definition>
+        <argsstring></argsstring>
+        <name>fYourPrimary</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourRun.hh" line="121" column="33" bodyfile="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourRun.hh" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_your_run_1ad94ff0f25ca66cc3199a523b767f6bbf" prot="private" static="no" mutable="no">
+        <type>G4double</type>
+        <definition>G4double YourRun::fEdepInTarget</definition>
+        <argsstring></argsstring>
+        <name>fEdepInTarget</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourRun.hh" line="126" column="14" bodyfile="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourRun.hh" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_your_run_1a1480f270aaea775d71aee1646deba910" prot="private" static="no" mutable="no">
+        <type>G4double</type>
+        <definition>G4double YourRun::fEdepInTarget2</definition>
+        <argsstring></argsstring>
+        <name>fEdepInTarget2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourRun.hh" line="127" column="14" bodyfile="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourRun.hh" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_your_run_1a483129ec22050d1249bbc7a85fda269e" prot="private" static="no" mutable="no">
+        <type>G4double</type>
+        <definition>G4double YourRun::fChargedTrackLengthInTarget</definition>
+        <argsstring></argsstring>
+        <name>fChargedTrackLengthInTarget</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourRun.hh" line="129" column="14" bodyfile="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourRun.hh" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_your_run_1a8687152cbccae7f6f6b5360dd4a7047b" prot="private" static="no" mutable="no">
+        <type>G4double</type>
+        <definition>G4double YourRun::fChargedTrackLengthInTarget2</definition>
+        <argsstring></argsstring>
+        <name>fChargedTrackLengthInTarget2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourRun.hh" line="130" column="14" bodyfile="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourRun.hh" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_your_run_1aecc91d477a67d060799dbcfac59c28b8" prot="private" static="no" mutable="no">
+        <type>G4bool</type>
+        <definition>G4bool YourRun::fIsActiveEdepHistogram</definition>
+        <argsstring></argsstring>
+        <name>fIsActiveEdepHistogram</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourRun.hh" line="135" column="14" bodyfile="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourRun.hh" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_your_run_1a4a82ee950f9f060ae52e5e5f89bb38f7" prot="private" static="no" mutable="no">
+        <type><ref refid="class_hist" kindref="compound">Hist</ref> *</type>
+        <definition>Hist* YourRun::fEdepHistogram</definition>
+        <argsstring></argsstring>
+        <name>fEdepHistogram</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourRun.hh" line="136" column="13" bodyfile="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourRun.hh" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_your_run_1abc317d7c90ab57fbab005e6c094de40d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>YourRun::YourRun</definition>
+        <argsstring>(YourDetectorConstruction *det, YourPrimaryGeneratorAction *prim)</argsstring>
+        <name>YourRun</name>
+        <param>
+          <type><ref refid="class_your_detector_construction" kindref="compound">YourDetectorConstruction</ref> *</type>
+          <declname>det</declname>
+        </param>
+        <param>
+          <type><ref refid="class_your_primary_generator_action" kindref="compound">YourPrimaryGeneratorAction</ref> *</type>
+          <declname>prim</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourRun.hh" line="54" column="5" bodyfile="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/src/YourRun.cc" bodystart="9" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="class_your_run_1a3fe16db75c25b8c075cb51585c690f37" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>YourRun::~YourRun</definition>
+        <argsstring>() override</argsstring>
+        <name>~YourRun</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourRun.hh" line="55" column="5" bodyfile="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/src/YourRun.cc" bodystart="32" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="class_your_run_1a214f4ffd2b6631e91b146673ca366731" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void YourRun::Merge</definition>
+        <argsstring>(const G4Run *run) override</argsstring>
+        <name>Merge</name>
+        <param>
+          <type>const G4Run *</type>
+          <declname>run</declname>
+        </param>
+        <briefdescription>
+<para>Virtual method to be implemented to define the way of merging the underlying (thread local) Run global data structures into one global instance. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This method will be invoked by the master on its own run object (<ref refid="class_your_run" kindref="compound">YourRun</ref>) on each of the worker, i.e. thread local, run (<ref refid="class_your_run" kindref="compound">YourRun</ref>) objects passing by their pointer as the input argument.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">run</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to a run (<ref refid="class_your_run" kindref="compound">YourRun</ref>) obejct that needs to be merged to this run object. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourRun.hh" line="68" column="10" bodyfile="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/src/YourRun.cc" bodystart="41" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="class_your_run_1aa376e978970562eaf77a075f8717c4b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void YourRun::EndOfRunSummary</definition>
+        <argsstring>()</argsstring>
+        <name>EndOfRunSummary</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourRun.hh" line="78" column="11" bodyfile="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/src/YourRun.cc" bodystart="72" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="class_your_run_1ad277e15f05defa1c3b4cba1d993d0c45" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void YourRun::AddEnergyDepositPerEvent</definition>
+        <argsstring>(const G4double edep)</argsstring>
+        <name>AddEnergyDepositPerEvent</name>
+        <param>
+          <type>const G4double</type>
+          <declname>edep</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourRun.hh" line="83" column="10" bodyfile="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourRun.hh" bodystart="83" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="class_your_run_1a1051ccc2d75356e0dc89ad6dfc49406b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void YourRun::AddChTrackLengthPerEvent</definition>
+        <argsstring>(const G4double length)</argsstring>
+        <name>AddChTrackLengthPerEvent</name>
+        <param>
+          <type>const G4double</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourRun.hh" line="88" column="10" bodyfile="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourRun.hh" bodystart="88" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="class_your_run_1a012c9f706dad87b718871854ef51de01" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void YourRun::FillEdepHistogram</definition>
+        <argsstring>(const G4double edep)</argsstring>
+        <name>FillEdepHistogram</name>
+        <param>
+          <type>const G4double</type>
+          <declname>edep</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourRun.hh" line="95" column="10" bodyfile="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourRun.hh" bodystart="95" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="class_your_run_1a054ce49b54fe54834a46d84cafa8c443" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void YourRun::SetEdepHisto</definition>
+        <argsstring>(const G4String &amp;filename, G4double emin, G4double emax, G4int numbins)</argsstring>
+        <name>SetEdepHisto</name>
+        <param>
+          <type>const G4String &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>G4double</type>
+          <declname>emin</declname>
+        </param>
+        <param>
+          <type>G4double</type>
+          <declname>emax</declname>
+        </param>
+        <param>
+          <type>G4int</type>
+          <declname>numbins</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourRun.hh" line="108" column="10" bodyfile="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourRun.hh" bodystart="108" bodyend="111"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>M. Novak </para>
+</simplesect>
+<simplesect kind="date"><para>December 2019</para>
+</simplesect>
+Implementation of <computeroutput>Geant4</computeroutput> <computeroutput>G4Run</computeroutput> for this user application.</para>
+<para>The run of your application usually encapsulates all infomation that you would like to collect during the simulation. Each thread will have their own object form this run class that is generated before the simulation by the individual threads itself simply calling the <computeroutput>G4RunAction::GenerateRun()</computeroutput> (i.e. <ref refid="class_your_run_action_1addaa4d7da00a40fbaa2f652143989602" kindref="member">YourRunAction::GenerateRun()</ref>) method of the <computeroutput>G4RunAction</computeroutput> (i.e. <ref refid="class_your_run_action" kindref="compound">YourRunAction</ref>) object that was constructed and registered for the given thread (in <ref refid="class_your_action_initialization_1ac3d431fd67d9f52e173c18ee19b84c02" kindref="member">YourActionInitialization::Build()</ref> or <ref refid="class_your_action_initialization_1ad03c7da711cf93767974243775e27e47" kindref="member">YourActionInitialization::BuildForMaster()</ref> methods for the workers or for the master respecively).</para>
+<para>While the run objects of the worker threads are used during the simulation to collect thread-local data, the run object generated by the master, is not used during the simulation. This latter is used only at the end of the run and only to collect all thread-local run data into one gloabl run object. This is done, by calling the <ref refid="class_your_run_1a214f4ffd2b6631e91b146673ca366731" kindref="member">Merge()</ref> method of this class that should contain the implementation how run data can be added/merged.</para>
+<para><simplesect kind="note"><para>for this application we will implement a simple histogram class. The only reason why we do this is to demonstrait the good practice regarding the implementation of objects, that are used inside the run object, shoudl follow (e.g. easily <computeroutput>&quot;mergable&quot;</computeroutput>). </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>G4Run</label>
+      </node>
+      <node id="1">
+        <label>YourRun</label>
+        <link refid="class_your_run"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="8">
+        <label>YourDetectorMessenger</label>
+        <link refid="class_your_detector_messenger"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>fYourDetector</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>YourPrimaryGeneratorAction</label>
+        <link refid="class_your_primary_generator_action"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>fYourDetector</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>G4VUserDetectorConstruction</label>
+      </node>
+      <node id="5">
+        <label>G4VUserPrimaryGeneratorAction</label>
+      </node>
+      <node id="2">
+        <label>G4Run</label>
+      </node>
+      <node id="1">
+        <label>YourRun</label>
+        <link refid="class_your_run"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>fEdepHistogram</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>fYourPrimary</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>fYourDetector</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>G4UImessenger</label>
+      </node>
+      <node id="3">
+        <label>Hist</label>
+        <link refid="class_hist"/>
+      </node>
+      <node id="6">
+        <label>YourDetectorConstruction</label>
+        <link refid="class_your_detector_construction"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>fDetMessenger</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourRun.hh" line="48" column="1" bodyfile="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourRun.hh" bodystart="48" bodyend="139"/>
+    <listofallmembers>
+      <member refid="class_your_run_1a1051ccc2d75356e0dc89ad6dfc49406b" prot="public" virt="non-virtual"><scope>YourRun</scope><name>AddChTrackLengthPerEvent</name></member>
+      <member refid="class_your_run_1ad277e15f05defa1c3b4cba1d993d0c45" prot="public" virt="non-virtual"><scope>YourRun</scope><name>AddEnergyDepositPerEvent</name></member>
+      <member refid="class_your_run_1aa376e978970562eaf77a075f8717c4b3" prot="public" virt="non-virtual"><scope>YourRun</scope><name>EndOfRunSummary</name></member>
+      <member refid="class_your_run_1a483129ec22050d1249bbc7a85fda269e" prot="private" virt="non-virtual"><scope>YourRun</scope><name>fChargedTrackLengthInTarget</name></member>
+      <member refid="class_your_run_1a8687152cbccae7f6f6b5360dd4a7047b" prot="private" virt="non-virtual"><scope>YourRun</scope><name>fChargedTrackLengthInTarget2</name></member>
+      <member refid="class_your_run_1a4a82ee950f9f060ae52e5e5f89bb38f7" prot="private" virt="non-virtual"><scope>YourRun</scope><name>fEdepHistogram</name></member>
+      <member refid="class_your_run_1ad94ff0f25ca66cc3199a523b767f6bbf" prot="private" virt="non-virtual"><scope>YourRun</scope><name>fEdepInTarget</name></member>
+      <member refid="class_your_run_1a1480f270aaea775d71aee1646deba910" prot="private" virt="non-virtual"><scope>YourRun</scope><name>fEdepInTarget2</name></member>
+      <member refid="class_your_run_1a012c9f706dad87b718871854ef51de01" prot="public" virt="non-virtual"><scope>YourRun</scope><name>FillEdepHistogram</name></member>
+      <member refid="class_your_run_1aecc91d477a67d060799dbcfac59c28b8" prot="private" virt="non-virtual"><scope>YourRun</scope><name>fIsActiveEdepHistogram</name></member>
+      <member refid="class_your_run_1ab51992016c0b231ea9caae94bb8ba63e" prot="private" virt="non-virtual"><scope>YourRun</scope><name>fYourDetector</name></member>
+      <member refid="class_your_run_1a88c8efaa98f2862dcf378588ca4945ed" prot="private" virt="non-virtual"><scope>YourRun</scope><name>fYourPrimary</name></member>
+      <member refid="class_your_run_1a214f4ffd2b6631e91b146673ca366731" prot="public" virt="non-virtual"><scope>YourRun</scope><name>Merge</name></member>
+      <member refid="class_your_run_1a054ce49b54fe54834a46d84cafa8c443" prot="public" virt="non-virtual"><scope>YourRun</scope><name>SetEdepHisto</name></member>
+      <member refid="class_your_run_1abc317d7c90ab57fbab005e6c094de40d" prot="public" virt="non-virtual"><scope>YourRun</scope><name>YourRun</name></member>
+      <member refid="class_your_run_1a3fe16db75c25b8c075cb51585c690f37" prot="public" virt="non-virtual"><scope>YourRun</scope><name>~YourRun</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

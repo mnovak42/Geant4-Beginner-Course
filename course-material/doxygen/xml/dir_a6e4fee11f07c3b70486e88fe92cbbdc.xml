@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_a6e4fee11f07c3b70486e88fe92cbbdc" kind="dir">
+    <compoundname>/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications</compoundname>
+    <innerdir refid="dir_afc8d83257b9a41ed29a5082f659a47e">/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application</innerdir>
+    <innerdir refid="dir_9aeb88e5faf1fdaa519fbeb8fed1c19e">/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/preliminaries</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/"/>
+  </compounddef>
+</doxygen>

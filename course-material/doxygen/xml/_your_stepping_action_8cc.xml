@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="_your_stepping_action_8cc" kind="file" language="C++">
+    <compoundname>YourSteppingAction.cc</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_your_stepping_action_8hh" kindref="compound">YourSteppingAction.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_your_detector_construction_8hh" kindref="compound">YourDetectorConstruction.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_your_event_action_8hh" kindref="compound">YourEventAction.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;G4Step.hh&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal">YourSteppingAction::YourSteppingAction(<ref refid="class_your_detector_construction" kindref="compound">YourDetectorConstruction</ref>*<sp/>det,<sp/><ref refid="class_your_event_action" kindref="compound">YourEventAction</ref>*<sp/>evtAction)</highlight></codeline>
+<codeline lineno="11"><highlight class="normal">:<sp/><sp/><sp/>G4UserSteppingAction(),</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>fYourDetector(det),</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>fYourEventAction(evtAction)<sp/>{<sp/>}</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal">YourSteppingAction::~YourSteppingAction()<sp/>{}</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Score<sp/>only<sp/>if<sp/>the<sp/>step<sp/>was<sp/>done<sp/>in<sp/>the<sp/>Target:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>-<sp/>cllect<sp/>energy<sp/>deposit<sp/>for<sp/>the<sp/>mean<sp/>(per-event)<sp/>energy<sp/>deposit<sp/>computation</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>-<sp/>same<sp/>for<sp/>the<sp/>charged<sp/>particle<sp/>track<sp/>length</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_your_stepping_action_1aa2ba6dd9459eac3241894ddd612e9a42" kindref="member">YourSteppingAction::UserSteppingAction</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>G4Step*<sp/>theStep)<sp/>{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Score<sp/>steps<sp/>done<sp/>only<sp/>in<sp/>the<sp/>target:<sp/>i.e.<sp/>pre-step<sp/>point<sp/>was<sp/>in<sp/>target</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(theStep-&gt;GetPreStepPoint()-&gt;GetTouchableHandle()-&gt;GetVolume()</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>!=<sp/>fYourDetector-&gt;GetTargetPhysicalVolume()<sp/>)<sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Step<sp/>was<sp/>done<sp/>inside<sp/>the<sp/>Target<sp/>so<sp/>do<sp/>scoring:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Get<sp/>the<sp/>energy<sp/>deposit<sp/>and<sp/>the<sp/>step<sp/>length</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>G4double<sp/>eDep<sp/><sp/><sp/>=<sp/>theStep-&gt;GetTotalEnergyDeposit();</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>G4double<sp/>trackL<sp/>=<sp/>theStep-&gt;GetStepLength();</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Get<sp/>the<sp/>G4Track<sp/>and<sp/>the<sp/>ParticleDefinition<sp/>to<sp/>see<sp/>if<sp/>the<sp/>particle<sp/>is<sp/>charged</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>G4ParticleDefinition*<sp/>pDef<sp/>=<sp/>theStep-&gt;GetTrack()-&gt;GetParticleDefinition();</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>pDef-&gt;GetPDGCharge()<sp/>!=<sp/>0.0<sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>add<sp/>current<sp/>step<sp/>length<sp/>to<sp/>the<sp/>charged<sp/>particle<sp/>track<sp/>length<sp/>per-event</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>fYourEventAction-&gt;AddChargedTrackLengthPerStep(<sp/>trackL<sp/>);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>add<sp/>current<sp/>energy<sp/>deposit<sp/>to<sp/>the<sp/>charged<sp/>particle<sp/>track<sp/>length<sp/>per-event</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>fYourEventAction-&gt;AddEnergyDepositPerStep(<sp/>eDep<sp/>);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/src/YourSteppingAction.cc"/>
+  </compounddef>
+</doxygen>

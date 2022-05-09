@@ -1,0 +1,271 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="class_your_detector_construction" kind="class" language="C++" prot="public">
+    <compoundname>YourDetectorConstruction</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">G4VUserDetectorConstruction</basecompoundref>
+    <includes refid="_your_detector_construction_8hh" local="no">YourDetectorConstruction.hh</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_your_detector_construction_1aaead48c40157a295f3a0bcd90cf3a6eb" prot="private" static="no" mutable="no">
+        <type><ref refid="class_your_detector_messenger" kindref="compound">YourDetectorMessenger</ref> *</type>
+        <definition>YourDetectorMessenger* YourDetectorConstruction::fDetMessenger</definition>
+        <argsstring></argsstring>
+        <name>fDetMessenger</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourDetectorConstruction.hh" line="83" column="27" bodyfile="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourDetectorConstruction.hh" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_your_detector_construction_1aef547948d430a18af3ec1e90908d6eb4" prot="private" static="no" mutable="no">
+        <type>G4Material *</type>
+        <definition>G4Material* YourDetectorConstruction::fTargetMaterial</definition>
+        <argsstring></argsstring>
+        <name>fTargetMaterial</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourDetectorConstruction.hh" line="86" column="27" bodyfile="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourDetectorConstruction.hh" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_your_detector_construction_1a49febe34aa8396db231050599c0d5bbc" prot="private" static="no" mutable="no">
+        <type>G4VPhysicalVolume *</type>
+        <definition>G4VPhysicalVolume* YourDetectorConstruction::fTargetPhysicalVolume</definition>
+        <argsstring></argsstring>
+        <name>fTargetPhysicalVolume</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourDetectorConstruction.hh" line="89" column="27" bodyfile="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourDetectorConstruction.hh" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_your_detector_construction_1a75f939c33903eaae9e1fe55434112a7d" prot="private" static="no" mutable="no">
+        <type>G4double</type>
+        <definition>G4double YourDetectorConstruction::fTargetThickness</definition>
+        <argsstring></argsstring>
+        <name>fTargetThickness</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourDetectorConstruction.hh" line="92" column="28" bodyfile="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourDetectorConstruction.hh" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_your_detector_construction_1aa3915a06971f46c9a8fa75dc67ae437d" prot="private" static="no" mutable="no">
+        <type>G4double</type>
+        <definition>G4double YourDetectorConstruction::fGunXPosition</definition>
+        <argsstring></argsstring>
+        <name>fGunXPosition</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourDetectorConstruction.hh" line="95" column="28" bodyfile="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourDetectorConstruction.hh" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_your_detector_construction_1a516922627e026a37789e51766299c3b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>YourDetectorConstruction::YourDetectorConstruction</definition>
+        <argsstring>()</argsstring>
+        <name>YourDetectorConstruction</name>
+        <briefdescription>
+<para>Constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourDetectorConstruction.hh" line="33" column="5" bodyfile="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/src/YourDetectorConstruction.cc" bodystart="21" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="class_your_detector_construction_1a65b057ba67706fe8f3093d073d077400" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>YourDetectorConstruction::~YourDetectorConstruction</definition>
+        <argsstring>() override</argsstring>
+        <name>~YourDetectorConstruction</name>
+        <briefdescription>
+<para>Destructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourDetectorConstruction.hh" line="35" column="5" bodyfile="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/src/YourDetectorConstruction.cc" bodystart="35" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="class_your_detector_construction_1a46a9e3405f3649534bd4eeb2ab3ff54b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>G4VPhysicalVolume *</type>
+        <definition>G4VPhysicalVolume * YourDetectorConstruction::Construct</definition>
+        <argsstring>() override</argsstring>
+        <name>Construct</name>
+        <briefdescription>
+<para>It&apos;s interface method to construct the detector. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The base class has the <ref refid="class_your_detector_construction_1a46a9e3405f3649534bd4eeb2ab3ff54b" kindref="member">Construct()</ref> (only one) pure virtual method which is invoked by the G4RunManager when it&apos;s Initialize() method is invoked. The <ref refid="class_your_detector_construction_1a46a9e3405f3649534bd4eeb2ab3ff54b" kindref="member">Construct()</ref> method must return the G4VPhysicalVolume pointer which represents the world volume.</para>
+<para>Your entire detector description must be implemented here in this method. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourDetectorConstruction.hh" line="47" column="23" bodyfile="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/src/YourDetectorConstruction.cc" bodystart="56" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="class_your_detector_construction_1a55d6a62941080b2860aa8d6fdafa1d04" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void YourDetectorConstruction::SetTargetThickness</definition>
+        <argsstring>(const G4double thick)</argsstring>
+        <name>SetTargetThickness</name>
+        <param>
+          <type>const G4double</type>
+          <declname>thick</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourDetectorConstruction.hh" line="62" column="14" bodyfile="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourDetectorConstruction.hh" bodystart="62" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="class_your_detector_construction_1a03e2237035c6408f35b52620cf093de6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>G4double</type>
+        <definition>G4double YourDetectorConstruction::GetTargetThickness</definition>
+        <argsstring>() const</argsstring>
+        <name>GetTargetThickness</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourDetectorConstruction.hh" line="63" column="14" bodyfile="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourDetectorConstruction.hh" bodystart="63" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="class_your_detector_construction_1afcad60cbc78ccb5fdc332b28d4859e8e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void YourDetectorConstruction::SetTargetMaterial</definition>
+        <argsstring>(const G4String &amp;matName)</argsstring>
+        <name>SetTargetMaterial</name>
+        <param>
+          <type>const G4String &amp;</type>
+          <declname>matName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourDetectorConstruction.hh" line="66" column="23" bodyfile="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/src/YourDetectorConstruction.cc" bodystart="40" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="class_your_detector_construction_1a06c169617117262d03981db9428404c9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const G4Material *</type>
+        <definition>const G4Material* YourDetectorConstruction::GetTargetMaterial</definition>
+        <argsstring>() const</argsstring>
+        <name>GetTargetMaterial</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourDetectorConstruction.hh" line="67" column="22" bodyfile="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourDetectorConstruction.hh" bodystart="67" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="class_your_detector_construction_1a72d0dd91f0bf34da47ac2e0d197f19ba" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>G4double</type>
+        <definition>G4double YourDetectorConstruction::GetGunXPosition</definition>
+        <argsstring>()</argsstring>
+        <name>GetGunXPosition</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourDetectorConstruction.hh" line="70" column="14" bodyfile="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourDetectorConstruction.hh" bodystart="70" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="class_your_detector_construction_1aa7718fe4b1f87bc12a2d1df68c3e9074" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const G4VPhysicalVolume *</type>
+        <definition>const G4VPhysicalVolume* YourDetectorConstruction::GetTargetPhysicalVolume</definition>
+        <argsstring>() const</argsstring>
+        <name>GetTargetPhysicalVolume</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourDetectorConstruction.hh" line="73" column="29" bodyfile="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourDetectorConstruction.hh" bodystart="73" bodyend="75"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>M. Novak </para>
+</simplesect>
+<simplesect kind="date"><para>December 2019</para>
+</simplesect>
+Implementation of the <computeroutput>Geant4</computeroutput> <computeroutput>G4VUserDetectorConstruction</computeroutput> <bold>mandatory interface</bold> for this user application.</para>
+<para>The description of the application detector geometry must be implemented in the <ref refid="class_your_detector_construction_1a46a9e3405f3649534bd4eeb2ab3ff54b" kindref="member">Construct()</ref> interface. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>G4VUserDetectorConstruction</label>
+      </node>
+      <node id="1">
+        <label>YourDetectorConstruction</label>
+        <link refid="class_your_detector_construction"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>YourDetectorMessenger</label>
+        <link refid="class_your_detector_messenger"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1" relation="usage">
+          <edgelabel>fYourDetector</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>G4VUserDetectorConstruction</label>
+      </node>
+      <node id="4">
+        <label>G4UImessenger</label>
+      </node>
+      <node id="1">
+        <label>YourDetectorConstruction</label>
+        <link refid="class_your_detector_construction"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>fDetMessenger</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourDetectorConstruction.hh" line="27" column="1" bodyfile="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourDetectorConstruction.hh" bodystart="27" bodyend="96"/>
+    <listofallmembers>
+      <member refid="class_your_detector_construction_1a46a9e3405f3649534bd4eeb2ab3ff54b" prot="public" virt="non-virtual"><scope>YourDetectorConstruction</scope><name>Construct</name></member>
+      <member refid="class_your_detector_construction_1aaead48c40157a295f3a0bcd90cf3a6eb" prot="private" virt="non-virtual"><scope>YourDetectorConstruction</scope><name>fDetMessenger</name></member>
+      <member refid="class_your_detector_construction_1aa3915a06971f46c9a8fa75dc67ae437d" prot="private" virt="non-virtual"><scope>YourDetectorConstruction</scope><name>fGunXPosition</name></member>
+      <member refid="class_your_detector_construction_1aef547948d430a18af3ec1e90908d6eb4" prot="private" virt="non-virtual"><scope>YourDetectorConstruction</scope><name>fTargetMaterial</name></member>
+      <member refid="class_your_detector_construction_1a49febe34aa8396db231050599c0d5bbc" prot="private" virt="non-virtual"><scope>YourDetectorConstruction</scope><name>fTargetPhysicalVolume</name></member>
+      <member refid="class_your_detector_construction_1a75f939c33903eaae9e1fe55434112a7d" prot="private" virt="non-virtual"><scope>YourDetectorConstruction</scope><name>fTargetThickness</name></member>
+      <member refid="class_your_detector_construction_1a72d0dd91f0bf34da47ac2e0d197f19ba" prot="public" virt="non-virtual"><scope>YourDetectorConstruction</scope><name>GetGunXPosition</name></member>
+      <member refid="class_your_detector_construction_1a06c169617117262d03981db9428404c9" prot="public" virt="non-virtual"><scope>YourDetectorConstruction</scope><name>GetTargetMaterial</name></member>
+      <member refid="class_your_detector_construction_1aa7718fe4b1f87bc12a2d1df68c3e9074" prot="public" virt="non-virtual"><scope>YourDetectorConstruction</scope><name>GetTargetPhysicalVolume</name></member>
+      <member refid="class_your_detector_construction_1a03e2237035c6408f35b52620cf093de6" prot="public" virt="non-virtual"><scope>YourDetectorConstruction</scope><name>GetTargetThickness</name></member>
+      <member refid="class_your_detector_construction_1afcad60cbc78ccb5fdc332b28d4859e8e" prot="public" virt="non-virtual"><scope>YourDetectorConstruction</scope><name>SetTargetMaterial</name></member>
+      <member refid="class_your_detector_construction_1a55d6a62941080b2860aa8d6fdafa1d04" prot="public" virt="non-virtual"><scope>YourDetectorConstruction</scope><name>SetTargetThickness</name></member>
+      <member refid="class_your_detector_construction_1a516922627e026a37789e51766299c3b8" prot="public" virt="non-virtual"><scope>YourDetectorConstruction</scope><name>YourDetectorConstruction</name></member>
+      <member refid="class_your_detector_construction_1a65b057ba67706fe8f3093d073d077400" prot="public" virt="non-virtual"><scope>YourDetectorConstruction</scope><name>~YourDetectorConstruction</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

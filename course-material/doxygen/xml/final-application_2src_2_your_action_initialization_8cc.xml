@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="final-application_2src_2_your_action_initialization_8cc" kind="file" language="C++">
+    <compoundname>YourActionInitialization.cc</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;YourActionInitialization.hh&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;YourDetectorConstruction.hh&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;YourPrimaryGeneratorAction.hh&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;YourRunAction.hh&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;YourEventAction.hh&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;YourSteppingAction.hh&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal">YourActionInitialization::YourActionInitialization(<ref refid="class_your_detector_construction" kindref="compound">YourDetectorConstruction</ref>*<sp/>det)</highlight></codeline>
+<codeline lineno="15"><highlight class="normal">:<sp/><sp/><sp/>G4VUserActionInitialization(),</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>fYourDetector(det)<sp/>{<sp/>}</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal">YourActionInitialization::~YourActionInitialization()<sp/>{}</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">//<sp/>NOT<sp/>CALLED<sp/>IN<sp/>SEQUENTIAL<sp/>MODE<sp/>i.e.<sp/>ONLY<sp/>FOR<sp/>MT:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">//<sp/>-<sp/>ONLY<sp/>FOR<sp/>creating<sp/>RunAction<sp/>for<sp/>the<sp/>Master<sp/>thread</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">//<sp/>-<sp/>(will<sp/>be<sp/>invoked<sp/>immediately<sp/>by<sp/>the<sp/>only<sp/>one<sp/>G4MTRunManager</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>when<sp/>the<sp/>ActionInitialization<sp/>object<sp/>is<sp/>registered<sp/>in<sp/>it<sp/>in<sp/>the<sp/>main)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="comment">//<sp/>-<sp/>this<sp/>RunAction<sp/>might<sp/>be<sp/>or<sp/>not<sp/>the<sp/>same<sp/>as<sp/>for<sp/>worker<sp/>threads<sp/>below</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="comment">//<sp/>-<sp/>see<sp/>more<sp/>under<sp/>the<sp/>G4VUserActionInitialization<sp/>class<sp/>section<sp/>at</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>https://twiki.cern.ch/twiki/bin/view/Geant4/QuickMigrationGuideForGeant4V10</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_your_action_initialization_1aea6639d45187c66d75beff8d822f8ee4" kindref="member">YourActionInitialization::BuildForMaster</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>we<sp/>will<sp/>use<sp/>the<sp/>same<sp/>for<sp/>the<sp/>Master<sp/>as<sp/>for<sp/>the<sp/>Workers<sp/>(IsMaster()<sp/>can<sp/>be</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>used<sp/>to<sp/>see<sp/>if<sp/>a<sp/>given<sp/>RunAction<sp/>object<sp/>is<sp/>the<sp/>one<sp/>that<sp/>belongs<sp/>to<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Master<sp/>thread<sp/>or<sp/>not:<sp/>see<sp/>for<sp/>example<sp/>YourRunAction::EndOfRunAction</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>method<sp/>for<sp/>an<sp/>example<sp/>of<sp/>doing<sp/>something<sp/>only<sp/>for<sp/>the<sp/>Master<sp/>RunAction</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>object<sp/>but<sp/>not<sp/>for<sp/>the<sp/>Worker<sp/>RunAction<sp/>objects)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>the<sp/>primary-generator<sp/>not<sp/>used<sp/>in<sp/>the<sp/>master<sp/>RunAction<sp/>only<sp/>for<sp/>the<sp/>workers</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/>SetUserAction(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_your_run_action" kindref="compound">YourRunAction</ref>(fYourDetector));</highlight></codeline>
+<codeline lineno="37"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Create<sp/>all<sp/>User<sp/>Actions<sp/>here:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="comment">//<sp/>-<sp/>for<sp/>sequential<sp/>mode<sp/>(will<sp/>be<sp/>invoked<sp/>immediately<sp/>by<sp/>the<sp/>only<sp/>one<sp/>G4RunManager</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>when<sp/>the<sp/>ActionInitialization<sp/>object<sp/>is<sp/>registered<sp/>in<sp/>it<sp/>in<sp/>the<sp/>main)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="comment">//<sp/>-<sp/>for<sp/>worker<sp/>threads<sp/>(will<sp/>be<sp/>invoked<sp/>later<sp/>by<sp/>all<sp/>worker<sp/>G4RunManager-s)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_your_action_initialization_1a38318e251dadd33234a33e042caea8d6" kindref="member">YourActionInitialization::Build</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Set<sp/>UserPrimaryGeneratorAction</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><ref refid="class_your_primary_generator_action" kindref="compound">YourPrimaryGeneratorAction</ref>*<sp/>primaryAction<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_your_primary_generator_action" kindref="compound">YourPrimaryGeneratorAction</ref>(fYourDetector);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/>SetUserAction(primaryAction);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Set<sp/>UserRunAction</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><ref refid="class_your_run_action" kindref="compound">YourRunAction</ref>*<sp/>runAction<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_your_run_action" kindref="compound">YourRunAction</ref>(fYourDetector,<sp/>primaryAction);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/>SetUserAction(runAction);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Set<sp/>UserEventAction</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><ref refid="class_your_event_action" kindref="compound">YourEventAction</ref>*<sp/>eventAction<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_your_event_action" kindref="compound">YourEventAction</ref>();</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/>SetUserAction(eventAction);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Set<sp/>UserSteppingAction</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/>SetUserAction(<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_your_stepping_action" kindref="compound">YourSteppingAction</ref>(fYourDetector,<sp/>eventAction)<sp/>);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/src/YourActionInitialization.cc"/>
+  </compounddef>
+</doxygen>

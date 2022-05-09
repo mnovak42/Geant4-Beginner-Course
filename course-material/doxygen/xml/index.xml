@@ -1,0 +1,223 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.1" xml:lang="en-US">
+  <compound refid="class_circle" kind="class"><name>Circle</name>
+    <member refid="class_circle_1ab52835004fbc01f76f772942f4acbc93" kind="variable"><name>fRadius</name></member>
+    <member refid="class_circle_1ad5677716e3459e15c8c21a37c12b2f95" kind="function"><name>Circle</name></member>
+    <member refid="class_circle_1ae3f30436e645d73e368e8ee55f8d1650" kind="function"><name>~Circle</name></member>
+    <member refid="class_circle_1a86ac61f5e826f24c2b338362fc14197e" kind="function"><name>Area</name></member>
+  </compound>
+  <compound refid="class_hist" kind="class"><name>Hist</name>
+    <member refid="class_hist_1ae15ff743533e88679e76dd81f3b2e5e3" kind="variable"><name>fFileName</name></member>
+    <member refid="class_hist_1a570c5efff16c51fc68ff49c5af905bea" kind="variable"><name>fx</name></member>
+    <member refid="class_hist_1a1bfd3031be25fcac5a26e9de8b85b020" kind="variable"><name>fy</name></member>
+    <member refid="class_hist_1a64ebc9bc8f05f27b08033c1f3fede33e" kind="variable"><name>fMin</name></member>
+    <member refid="class_hist_1aa456258afdf48967184da6e858cd70d6" kind="variable"><name>fMax</name></member>
+    <member refid="class_hist_1a0d49b3e2560a8e352d4b0135ef8a2ba6" kind="variable"><name>fDelta</name></member>
+    <member refid="class_hist_1a3b8e255a9f9c53b52124d2fda743f7df" kind="variable"><name>fInvDelta</name></member>
+    <member refid="class_hist_1aa75cca4b1040f745104186daa1a27fad" kind="variable"><name>fSum</name></member>
+    <member refid="class_hist_1aaa6dc5f8fa6cb46bf11acddf084fd57c" kind="variable"><name>fNumBins</name></member>
+    <member refid="class_hist_1ad00be463085f7e44dbd22f13cd0e4634" kind="function"><name>Hist</name></member>
+    <member refid="class_hist_1ad41ccbb4b5752f197c0089fd68f39ff4" kind="function"><name>Hist</name></member>
+    <member refid="class_hist_1a33efa5f5905fa72c4ea41d416c7d5456" kind="function"><name>~Hist</name></member>
+    <member refid="class_hist_1a79f2da3286205ec4cb025cddfd307f8a" kind="function"><name>Initialize</name></member>
+    <member refid="class_hist_1a9b05f2cb9f96439ab2e2a32dd156b635" kind="function"><name>ReSet</name></member>
+    <member refid="class_hist_1a17b2c52a462d4d23b2939a3878a7e4e4" kind="function"><name>Fill</name></member>
+    <member refid="class_hist_1a0fbc3986b6754f62a7396a2e74755a33" kind="function"><name>Fill</name></member>
+    <member refid="class_hist_1af1a36a92f64c9a0a351a14f7021cdea7" kind="function"><name>GetNumBins</name></member>
+    <member refid="class_hist_1a14d387ff80c3ed13f85b35584b17670b" kind="function"><name>GetDelta</name></member>
+    <member refid="class_hist_1aef448eb90d2667880dd9ff1c496611e2" kind="function"><name>GetMin</name></member>
+    <member refid="class_hist_1aec279f15b4947e7b8f640821ac4201ef" kind="function"><name>GetMax</name></member>
+    <member refid="class_hist_1ac510b43d19af3b68a09c54467a3d9e92" kind="function"><name>GetSum</name></member>
+    <member refid="class_hist_1a106d962446609b18d5cab47ae33a0cda" kind="function"><name>GetX</name></member>
+    <member refid="class_hist_1a26200c195ec15814435d8e166c487846" kind="function"><name>GetY</name></member>
+    <member refid="class_hist_1aecd5bf6b1964f825abfd052bf4b930a2" kind="function"><name>WriteToFile</name></member>
+    <member refid="class_hist_1a118fc71052d66594ab3a0a112fbc09ba" kind="function"><name>WriteToFile</name></member>
+    <member refid="class_hist_1a606e18630f082d8c7192c04685cf6770" kind="function"><name>Add</name></member>
+  </compound>
+  <compound refid="class_square" kind="class"><name>Square</name>
+    <member refid="class_square_1aff6f957a66206a3539d19b9a441e5bd8" kind="variable"><name>fSideLength</name></member>
+    <member refid="class_square_1ac57e7c45ebfe5271e41e73fcdb20fd83" kind="function"><name>Square</name></member>
+    <member refid="class_square_1a90af7ce1060cff7b717ceddb333846b8" kind="function"><name>~Square</name></member>
+    <member refid="class_square_1a1f441aa115566d3c149c016b0d9181a0" kind="function"><name>Area</name></member>
+    <member refid="class_square_1aa432e12bd2ca6c98164ea3d12aadc625" kind="function"><name>Perimeter</name></member>
+  </compound>
+  <compound refid="class_v_shape2_d" kind="class"><name>VShape2D</name>
+    <member refid="class_v_shape2_d_1a58711c52b6ddbf714dcf3d71055293d2" kind="variable"><name>fName</name></member>
+    <member refid="class_v_shape2_d_1af437d1216aa29be49a9dcad89c95b4af" kind="function"><name>VShape2D</name></member>
+    <member refid="class_v_shape2_d_1ac9fb57adc9dc2afee0d68e9b5e56b26d" kind="function"><name>~VShape2D</name></member>
+    <member refid="class_v_shape2_d_1ac40f961d36ef68fce3adf87f6fd3bd34" kind="function"><name>GetName</name></member>
+    <member refid="class_v_shape2_d_1a3c385a0963ad684273a58f81db92254a" kind="function"><name>Area</name></member>
+    <member refid="class_v_shape2_d_1a15a643173e0c2581124f6bd2e139a06e" kind="function"><name>Perimeter</name></member>
+  </compound>
+  <compound refid="class_your_action_initialization" kind="class"><name>YourActionInitialization</name>
+    <member refid="class_your_action_initialization_1ae5864e55e3768116cf834b1bf9562813" kind="variable"><name>fYourDetector</name></member>
+    <member refid="class_your_action_initialization_1ad3ae50652c15442af4282782ab149618" kind="function"><name>YourActionInitialization</name></member>
+    <member refid="class_your_action_initialization_1a6b0b1f41b2a896911918a2f2c443f227" kind="function"><name>~YourActionInitialization</name></member>
+    <member refid="class_your_action_initialization_1ac3d431fd67d9f52e173c18ee19b84c02" kind="function"><name>Build</name></member>
+    <member refid="class_your_action_initialization_1ad03c7da711cf93767974243775e27e47" kind="function"><name>BuildForMaster</name></member>
+  </compound>
+  <compound refid="class_your_detector_construction" kind="class"><name>YourDetectorConstruction</name>
+    <member refid="class_your_detector_construction_1aaead48c40157a295f3a0bcd90cf3a6eb" kind="variable"><name>fDetMessenger</name></member>
+    <member refid="class_your_detector_construction_1aef547948d430a18af3ec1e90908d6eb4" kind="variable"><name>fTargetMaterial</name></member>
+    <member refid="class_your_detector_construction_1a49febe34aa8396db231050599c0d5bbc" kind="variable"><name>fTargetPhysicalVolume</name></member>
+    <member refid="class_your_detector_construction_1a75f939c33903eaae9e1fe55434112a7d" kind="variable"><name>fTargetThickness</name></member>
+    <member refid="class_your_detector_construction_1aa3915a06971f46c9a8fa75dc67ae437d" kind="variable"><name>fGunXPosition</name></member>
+    <member refid="class_your_detector_construction_1a516922627e026a37789e51766299c3b8" kind="function"><name>YourDetectorConstruction</name></member>
+    <member refid="class_your_detector_construction_1a65b057ba67706fe8f3093d073d077400" kind="function"><name>~YourDetectorConstruction</name></member>
+    <member refid="class_your_detector_construction_1a46a9e3405f3649534bd4eeb2ab3ff54b" kind="function"><name>Construct</name></member>
+    <member refid="class_your_detector_construction_1a55d6a62941080b2860aa8d6fdafa1d04" kind="function"><name>SetTargetThickness</name></member>
+    <member refid="class_your_detector_construction_1a03e2237035c6408f35b52620cf093de6" kind="function"><name>GetTargetThickness</name></member>
+    <member refid="class_your_detector_construction_1afcad60cbc78ccb5fdc332b28d4859e8e" kind="function"><name>SetTargetMaterial</name></member>
+    <member refid="class_your_detector_construction_1a06c169617117262d03981db9428404c9" kind="function"><name>GetTargetMaterial</name></member>
+    <member refid="class_your_detector_construction_1a72d0dd91f0bf34da47ac2e0d197f19ba" kind="function"><name>GetGunXPosition</name></member>
+    <member refid="class_your_detector_construction_1aa7718fe4b1f87bc12a2d1df68c3e9074" kind="function"><name>GetTargetPhysicalVolume</name></member>
+  </compound>
+  <compound refid="class_your_detector_messenger" kind="class"><name>YourDetectorMessenger</name>
+    <member refid="class_your_detector_messenger_1a4cdf33a258a27996f9c56b53dc75f190" kind="variable"><name>fYourDetector</name></member>
+    <member refid="class_your_detector_messenger_1ab0920530772db7cf7c838ad400944a03" kind="variable"><name>fDirCMD</name></member>
+    <member refid="class_your_detector_messenger_1a47cf53ce11420060dce2eada9827c50b" kind="variable"><name>fTargetThicknessCMD</name></member>
+    <member refid="class_your_detector_messenger_1a93055abbca3d8c00f8f9394706c9b585" kind="variable"><name>fTargetMaterialCMD</name></member>
+    <member refid="class_your_detector_messenger_1ae6ed9f0eab066330cd987bb47c6c1e52" kind="function"><name>YourDetectorMessenger</name></member>
+    <member refid="class_your_detector_messenger_1add5f94cbddba418cf62dc54782093ae1" kind="function"><name>~YourDetectorMessenger</name></member>
+    <member refid="class_your_detector_messenger_1a77acafd9c02bed9c062bd1d8cec6f793" kind="function"><name>SetNewValue</name></member>
+  </compound>
+  <compound refid="class_your_event_action" kind="class"><name>YourEventAction</name>
+    <member refid="class_your_event_action_1a62ca226fdcd1270e4a148065eacff717" kind="variable"><name>fEdepPerEvt</name></member>
+    <member refid="class_your_event_action_1aab775ba8c914f17308ba886bb7234c4f" kind="variable"><name>fChTrackLengthPerEvt</name></member>
+    <member refid="class_your_event_action_1a19587557c25d682de46b25c2cc3bcbee" kind="function"><name>YourEventAction</name></member>
+    <member refid="class_your_event_action_1a08b581f19b950cae0c9065e558dfe76e" kind="function"><name>~YourEventAction</name></member>
+    <member refid="class_your_event_action_1adf3fd381562d250a5b6d7dab456e3d6a" kind="function"><name>BeginOfEventAction</name></member>
+    <member refid="class_your_event_action_1a231bc50b48323bc82e93a58547a2bdb6" kind="function"><name>EndOfEventAction</name></member>
+    <member refid="class_your_event_action_1a5f49649ef2e565e032eec0fd9ed4f7f9" kind="function"><name>AddEnergyDepositPerStep</name></member>
+    <member refid="class_your_event_action_1aeeb194c680327b35bec4cd0d4e4241cb" kind="function"><name>AddChargedTrackLengthPerStep</name></member>
+  </compound>
+  <compound refid="class_your_primary_generator_action" kind="class"><name>YourPrimaryGeneratorAction</name>
+    <member refid="class_your_primary_generator_action_1a3b45065c125f5d25cf276fc66ff9b691" kind="variable"><name>fYourDetector</name></member>
+    <member refid="class_your_primary_generator_action_1af83c0f002d7c04ad65296da8dd696773" kind="variable"><name>fParticleGun</name></member>
+    <member refid="class_your_primary_generator_action_1a30d6aee8842b619d09beadb68756151c" kind="function"><name>YourPrimaryGeneratorAction</name></member>
+    <member refid="class_your_primary_generator_action_1a26c19caf885cd8f31bb56d6b810d45c7" kind="function"><name>~YourPrimaryGeneratorAction</name></member>
+    <member refid="class_your_primary_generator_action_1a8eedfb46f76a99646a682f2469ccc9cd" kind="function"><name>GeneratePrimaries</name></member>
+    <member refid="class_your_primary_generator_action_1ad176abbaf7c30c85d9e8a85e8fbb498a" kind="function"><name>GetParticleGun</name></member>
+    <member refid="class_your_primary_generator_action_1ae95d92b178d3f26b833e348449950716" kind="function"><name>GetParticleName</name></member>
+    <member refid="class_your_primary_generator_action_1aa31147bc48777a798b54e8d48a914a4f" kind="function"><name>GetParticleEnergy</name></member>
+    <member refid="class_your_primary_generator_action_1aed5678e0675ef31507bd028b8903d817" kind="function"><name>SetDefaultKinematic</name></member>
+    <member refid="class_your_primary_generator_action_1adf059d6b880334e42e38a60a71fcf0db" kind="function"><name>UpdatePosition</name></member>
+  </compound>
+  <compound refid="class_your_run" kind="class"><name>YourRun</name>
+    <member refid="class_your_run_1ab51992016c0b231ea9caae94bb8ba63e" kind="variable"><name>fYourDetector</name></member>
+    <member refid="class_your_run_1a88c8efaa98f2862dcf378588ca4945ed" kind="variable"><name>fYourPrimary</name></member>
+    <member refid="class_your_run_1ad94ff0f25ca66cc3199a523b767f6bbf" kind="variable"><name>fEdepInTarget</name></member>
+    <member refid="class_your_run_1a1480f270aaea775d71aee1646deba910" kind="variable"><name>fEdepInTarget2</name></member>
+    <member refid="class_your_run_1a483129ec22050d1249bbc7a85fda269e" kind="variable"><name>fChargedTrackLengthInTarget</name></member>
+    <member refid="class_your_run_1a8687152cbccae7f6f6b5360dd4a7047b" kind="variable"><name>fChargedTrackLengthInTarget2</name></member>
+    <member refid="class_your_run_1aecc91d477a67d060799dbcfac59c28b8" kind="variable"><name>fIsActiveEdepHistogram</name></member>
+    <member refid="class_your_run_1a4a82ee950f9f060ae52e5e5f89bb38f7" kind="variable"><name>fEdepHistogram</name></member>
+    <member refid="class_your_run_1abc317d7c90ab57fbab005e6c094de40d" kind="function"><name>YourRun</name></member>
+    <member refid="class_your_run_1a3fe16db75c25b8c075cb51585c690f37" kind="function"><name>~YourRun</name></member>
+    <member refid="class_your_run_1a214f4ffd2b6631e91b146673ca366731" kind="function"><name>Merge</name></member>
+    <member refid="class_your_run_1aa376e978970562eaf77a075f8717c4b3" kind="function"><name>EndOfRunSummary</name></member>
+    <member refid="class_your_run_1ad277e15f05defa1c3b4cba1d993d0c45" kind="function"><name>AddEnergyDepositPerEvent</name></member>
+    <member refid="class_your_run_1a1051ccc2d75356e0dc89ad6dfc49406b" kind="function"><name>AddChTrackLengthPerEvent</name></member>
+    <member refid="class_your_run_1a012c9f706dad87b718871854ef51de01" kind="function"><name>FillEdepHistogram</name></member>
+    <member refid="class_your_run_1a054ce49b54fe54834a46d84cafa8c443" kind="function"><name>SetEdepHisto</name></member>
+  </compound>
+  <compound refid="class_your_run_action" kind="class"><name>YourRunAction</name>
+    <member refid="class_your_run_action_1a5701d59870e6796ab86e7c3551f91e52" kind="variable"><name>fYourDetector</name></member>
+    <member refid="class_your_run_action_1a14385b657eb6c36d608e3eed240dd0af" kind="variable"><name>fYourPrimary</name></member>
+    <member refid="class_your_run_action_1aa5abd627203fd11dcbafec7f3de57f38" kind="variable"><name>fYourRun</name></member>
+    <member refid="class_your_run_action_1a6a99a0b0d1ebdf3c89739e69a78a6649" kind="variable"><name>fMessenger</name></member>
+    <member refid="class_your_run_action_1ab82df71848844fbc09faa190362a90f2" kind="variable"><name>fIsEdepHistogramUICmdInvoked</name></member>
+    <member refid="class_your_run_action_1af4bf40f042f853b3d76d220c2aaa651b" kind="variable"><name>fEdepHistFileName</name></member>
+    <member refid="class_your_run_action_1a408375777da60f3a762b9d911eabab9c" kind="variable"><name>fEdepHistMinEnergy</name></member>
+    <member refid="class_your_run_action_1a19be7e638c20e369c224cd95de0dc3c6" kind="variable"><name>fEdepHistMaxEnergy</name></member>
+    <member refid="class_your_run_action_1a4f280cbcf1d074aebce68135b6c322b2" kind="variable"><name>fEdepHistNumBins</name></member>
+    <member refid="class_your_run_action_1ad69ad5998095b1dcc0d93447908f0822" kind="function"><name>YourRunAction</name></member>
+    <member refid="class_your_run_action_1aedd46b6c8080259624a2883a88b9a50c" kind="function"><name>~YourRunAction</name></member>
+    <member refid="class_your_run_action_1addaa4d7da00a40fbaa2f652143989602" kind="function"><name>GenerateRun</name></member>
+    <member refid="class_your_run_action_1adeb5ae9e1c62b96eb5bfb273640af605" kind="function"><name>BeginOfRunAction</name></member>
+    <member refid="class_your_run_action_1aca249ff8eb703827e1e985900226b8d0" kind="function"><name>EndOfRunAction</name></member>
+    <member refid="class_your_run_action_1a538b0f064d985fea465238bd36ed885a" kind="function"><name>SetEdepHistogram</name></member>
+  </compound>
+  <compound refid="class_your_run_action_messenger" kind="class"><name>YourRunActionMessenger</name>
+    <member refid="class_your_run_action_messenger_1a85a338ba3a85d527376bfd1149012f2e" kind="variable"><name>fYourRunAction</name></member>
+    <member refid="class_your_run_action_messenger_1a6934cefb226be9995bf3e3ada3f265f2" kind="variable"><name>fDirCMD</name></member>
+    <member refid="class_your_run_action_messenger_1a98efcc364efa8e8b7375c810971b8429" kind="variable"><name>fEdepHistogramCMD</name></member>
+    <member refid="class_your_run_action_messenger_1a2fc883e38a3899c3cbebc4518ccfe5b0" kind="function"><name>YourRunActionMessenger</name></member>
+    <member refid="class_your_run_action_messenger_1a595012102da46112a81195240f60c22a" kind="function"><name>~YourRunActionMessenger</name></member>
+    <member refid="class_your_run_action_messenger_1ace8157ecdbae17b1300529ad44338f38" kind="function"><name>SetNewValue</name></member>
+  </compound>
+  <compound refid="class_your_stepping_action" kind="class"><name>YourSteppingAction</name>
+    <member refid="class_your_stepping_action_1aa9a4299c4b8ccb9fffa7a67452db46d0" kind="variable"><name>fYourDetector</name></member>
+    <member refid="class_your_stepping_action_1a951b60942aac62eb57b1c60762024af5" kind="variable"><name>fYourEventAction</name></member>
+    <member refid="class_your_stepping_action_1aa585f1f1cbe2bc90b1c103f76790bd0d" kind="function"><name>YourSteppingAction</name></member>
+    <member refid="class_your_stepping_action_1a1b1613ebcb8f0cb0a30adeb5ecbdcf7f" kind="function"><name>~YourSteppingAction</name></member>
+    <member refid="class_your_stepping_action_1aa2ba6dd9459eac3241894ddd612e9a42" kind="function"><name>UserSteppingAction</name></member>
+  </compound>
+  <compound refid="_hist_8hh" kind="file"><name>Hist.hh</name>
+  </compound>
+  <compound refid="_your_action_initialization_8hh" kind="file"><name>YourActionInitialization.hh</name>
+  </compound>
+  <compound refid="_your_detector_construction_8hh" kind="file"><name>YourDetectorConstruction.hh</name>
+  </compound>
+  <compound refid="_your_detector_messenger_8hh" kind="file"><name>YourDetectorMessenger.hh</name>
+  </compound>
+  <compound refid="_your_event_action_8hh" kind="file"><name>YourEventAction.hh</name>
+  </compound>
+  <compound refid="_your_primary_generator_action_8hh" kind="file"><name>YourPrimaryGeneratorAction.hh</name>
+  </compound>
+  <compound refid="_your_run_8hh" kind="file"><name>YourRun.hh</name>
+  </compound>
+  <compound refid="_your_run_action_8hh" kind="file"><name>YourRunAction.hh</name>
+  </compound>
+  <compound refid="_your_run_action_messenger_8hh" kind="file"><name>YourRunActionMessenger.hh</name>
+  </compound>
+  <compound refid="_your_stepping_action_8hh" kind="file"><name>YourSteppingAction.hh</name>
+  </compound>
+  <compound refid="_hist_8cc" kind="file"><name>Hist.cc</name>
+  </compound>
+  <compound refid="_your_action_initialization_8cc" kind="file"><name>YourActionInitialization.cc</name>
+  </compound>
+  <compound refid="_your_detector_construction_8cc" kind="file"><name>YourDetectorConstruction.cc</name>
+  </compound>
+  <compound refid="_your_detector_messenger_8cc" kind="file"><name>YourDetectorMessenger.cc</name>
+  </compound>
+  <compound refid="_your_event_action_8cc" kind="file"><name>YourEventAction.cc</name>
+  </compound>
+  <compound refid="_your_primary_generator_action_8cc" kind="file"><name>YourPrimaryGeneratorAction.cc</name>
+  </compound>
+  <compound refid="_your_run_8cc" kind="file"><name>YourRun.cc</name>
+  </compound>
+  <compound refid="_your_run_action_8cc" kind="file"><name>YourRunAction.cc</name>
+  </compound>
+  <compound refid="_your_run_action_messenger_8cc" kind="file"><name>YourRunActionMessenger.cc</name>
+  </compound>
+  <compound refid="_your_stepping_action_8cc" kind="file"><name>YourSteppingAction.cc</name>
+  </compound>
+  <compound refid="your_main_application_8cc" kind="file"><name>yourMainApplication.cc</name>
+    <member refid="your_main_application_8cc_1a3c04138a5bfe5d72780bb7e82a18e627" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="_circle_8hh" kind="file"><name>Circle.hh</name>
+  </compound>
+  <compound refid="_square_8hh" kind="file"><name>Square.hh</name>
+  </compound>
+  <compound refid="_v_shape2_d_8hh" kind="file"><name>VShape2D.hh</name>
+  </compound>
+  <compound refid="main_8cc" kind="file"><name>main.cc</name>
+    <member refid="main_8cc_1a49decf2e106927029ac1fbf2854a4bd7" kind="function"><name>Print</name></member>
+    <member refid="main_8cc_1ae66f6b31b5ad750f1fe042a706a4e3d4" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="dir_a6e4fee11f07c3b70486e88fe92cbbdc" kind="dir"><name>/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications</name>
+  </compound>
+  <compound refid="dir_e0e188c8e45e11717f2eafbbcd13fdc9" kind="dir"><name>/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/preliminaries/cpp-interface</name>
+  </compound>
+  <compound refid="dir_afc8d83257b9a41ed29a5082f659a47e" kind="dir"><name>/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application</name>
+  </compound>
+  <compound refid="dir_08be6e1770cf4f179ba7ad469ec388ce" kind="dir"><name>/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/preliminaries/cpp-interface/include</name>
+  </compound>
+  <compound refid="dir_c4500915f0fbcaf5dffc829f16a8e822" kind="dir"><name>/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include</name>
+  </compound>
+  <compound refid="dir_9aeb88e5faf1fdaa519fbeb8fed1c19e" kind="dir"><name>/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/preliminaries</name>
+  </compound>
+  <compound refid="dir_89d9d5c0d8a244c4935c815e12985b48" kind="dir"><name>/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/src</name>
+  </compound>
+</doxygenindex>

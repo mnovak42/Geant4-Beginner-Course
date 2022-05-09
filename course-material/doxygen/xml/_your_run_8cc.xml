@@ -1,0 +1,133 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="_your_run_8cc" kind="file" language="C++">
+    <compoundname>YourRun.cc</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_your_run_8hh" kindref="compound">YourRun.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_your_detector_construction_8hh" kindref="compound">YourDetectorConstruction.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_your_primary_generator_action_8hh" kindref="compound">YourPrimaryGeneratorAction.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;G4Material.hh&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal">YourRun::YourRun(<ref refid="class_your_detector_construction" kindref="compound">YourDetectorConstruction</ref>*<sp/>det,<sp/><ref refid="class_your_primary_generator_action" kindref="compound">YourPrimaryGeneratorAction</ref>*<sp/>prim)</highlight></codeline>
+<codeline lineno="10"><highlight class="normal">:<sp/><sp/><sp/>G4Run(),</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>fYourDetector(det),</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>fYourPrimary(prim)<sp/>{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>init<sp/>data<sp/>members</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>fEdepInTarget<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0.0;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>fEdepInTarget2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0.0;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>fChargedTrackLengthInTarget<sp/><sp/>=<sp/>0.0;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>fChargedTrackLengthInTarget2<sp/>=<sp/>0.0;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Energy<sp/>deposit<sp/>histogram<sp/>with<sp/>default<sp/>paraneters.<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Note:<sp/>all<sp/>properties<sp/>can<sp/>be<sp/>set<sp/>from<sp/>UI<sp/>command<sp/>(our<sp/>pwn<sp/>UI<sp/>command<sp/>is</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>/yourApp/runAction/edepHisto<sp/>...<sp/>see<sp/>YourRunActionMessenger)<sp/>and<sp/>will<sp/>be</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>updated<sp/>in<sp/>YourRunAction::BeginOfRunAction<sp/>method.<sp/>Invoking<sp/>this<sp/>UI</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>command<sp/>(in<sp/>the<sp/>g4<sp/>macro<sp/>file)<sp/>activates<sp/>this<sp/>energy<sp/>deposit<sp/>histogram</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>that<sp/>stays<sp/>inactive<sp/>(not<sp/>used)<sp/>otherwise.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>fIsActiveEdepHistogram<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>fEdepHistogram<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_hist" kindref="compound">Hist</ref>(</highlight><highlight class="stringliteral">&quot;Hist_Edep.dat&quot;</highlight><highlight class="normal">,<sp/>0.0,<sp/>10.0*CLHEP::keV,<sp/>100);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal">YourRun::~YourRun()<sp/>{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>free<sp/>the<sp/>memoery<sp/>that<sp/>was<sp/>allocated<sp/>dynamically<sp/>(i.e.<sp/>our<sp/>histogram<sp/>object)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>fEdepHistogram;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="comment">//<sp/>This<sp/>method<sp/>will<sp/>be<sp/>called<sp/>by<sp/>the<sp/>master<sp/>RunManager<sp/>by<sp/>passing<sp/>each<sp/>theard</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="comment">//<sp/>local<sp/>run<sp/>(YourRun)<sp/>pointers<sp/>as<sp/>argument.<sp/>Therefore,<sp/>here<sp/>you<sp/>define<sp/>how<sp/>to</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="comment">//<sp/>merge<sp/>each<sp/>thread<sp/>local<sp/>Run<sp/>global<sp/>data<sp/>structures<sp/>(all<sp/>thread<sp/>local<sp/>Run-s</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="comment">//<sp/>will<sp/>be<sp/>merged<sp/>to<sp/>the<sp/>master<sp/>Run<sp/>data).</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_your_run_1a214f4ffd2b6631e91b146673ca366731" kindref="member">YourRun::Merge</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>G4Run*<sp/>run)<sp/>{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Cast<sp/>the<sp/>(theard<sp/>local)<sp/>G4Run<sp/>(base)<sp/>pointer<sp/>to<sp/>YourRun<sp/>pointer<sp/>(it<sp/>will</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>be<sp/>YourRun<sp/>since<sp/>the<sp/>RunManager<sp/>will<sp/>call<sp/>YourRunAction::GenerateRun</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>interface<sp/>method<sp/>to<sp/>generate<sp/>the<sp/>Run-s)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_your_run" kindref="compound">YourRun</ref>*<sp/>localRun<sp/>=<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keyword">const<sp/></highlight><highlight class="normal"><ref refid="class_your_run" kindref="compound">YourRun</ref>*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(run);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Then<sp/>you<sp/>can<sp/>define<sp/>how<sp/>to<sp/>sum<sp/>up<sp/>the<sp/>individual<sp/>YourRun<sp/>data<sp/>members</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/>fEdepInTarget<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>+=<sp/>localRun-&gt;fEdepInTarget;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/>fEdepInTarget2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>+=<sp/>localRun-&gt;fEdepInTarget2;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/>fChargedTrackLengthInTarget<sp/><sp/>+=<sp/>localRun-&gt;fChargedTrackLengthInTarget;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/>fChargedTrackLengthInTarget2<sp/>+=<sp/>localRun-&gt;fChargedTrackLengthInTarget2;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>add<sp/>our<sp/>histograms:<sp/>note,<sp/>since<sp/>the<sp/>Hist<sp/>object<sp/>is<sp/>not<sp/>a<sp/>primitive<sp/>type,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>the<sp/>addition<sp/>of<sp/>such<sp/>objects<sp/>needs<sp/>to<sp/>be<sp/>defined<sp/>(see<sp/>the<sp/>Hist::Add()</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>method<sp/>for<sp/>more<sp/>details).</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(fIsActiveEdepHistogram)<sp/>{</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>fEdepHistogram-&gt;Add(localRun-&gt;fEdepHistogram);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>This<sp/>is<sp/>just<sp/>to<sp/>have<sp/>one<sp/>PrimaryGeneratorAction<sp/>object<sp/>at<sp/>the<sp/>end<sp/>(because)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>here<sp/>we<sp/>are<sp/>merging<sp/>the<sp/>worker<sp/>threads<sp/>run<sp/>objects<sp/>into<sp/>the<sp/>master<sp/>thread</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>run<sp/>object<sp/>but<sp/>the<sp/>master&apos;s<sp/>RunAction<sp/>do<sp/>not<sp/>have<sp/>the<sp/>PrimaryGenerator<sp/>set.)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/>fYourPrimary<sp/>=<sp/>localRun-&gt;fYourPrimary;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Call<sp/>the<sp/>base<sp/>class<sp/>Merge<sp/>method<sp/>at<sp/>the<sp/>end<sp/>to<sp/>merge<sp/>the<sp/>base<sp/>class<sp/>members</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/>G4Run::Merge(run);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Called<sp/>only<sp/>for<sp/>the<sp/>Master&apos;s<sp/>RunAction<sp/>at<sp/>the<sp/>end<sp/>after<sp/>all<sp/>thread<sp/>local<sp/>runs</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="comment">//<sp/>have<sp/>been<sp/>merged.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/>YourRun::EndOfRunSummary()<sp/>{</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Get<sp/>number<sp/>of<sp/>events<sp/>simulated<sp/>from<sp/>the<sp/>base<sp/>G4Run<sp/>object<sp/>(number<sp/>of</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>events<sp/>processed<sp/>by<sp/>each<sp/>worker<sp/>thread<sp/>has<sp/>already<sp/>been<sp/>merged<sp/>at<sp/>the<sp/>end</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>of<sp/>the<sp/>Merge<sp/>method<sp/>when<sp/>calling<sp/>the<sp/>base<sp/>class<sp/>Merge<sp/>method).</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>G4int<sp/><sp/><sp/><sp/>nEvt<sp/>=<sp/>GetNumberOfEvent();</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(nEvt<sp/>==<sp/>0)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>G4double<sp/>norm<sp/>=<sp/>1.0/nEvt;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Compute<sp/>mean<sp/>energy<sp/>deposit<sp/>in<sp/>target<sp/>per<sp/>event<sp/>and<sp/>its<sp/>rms</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>fEdepInTarget<sp/><sp/><sp/><sp/>*=<sp/>norm;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>fEdepInTarget2<sp/><sp/><sp/>*=<sp/>norm;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>G4double<sp/>rmsEdep<sp/><sp/>=<sp/>fEdepInTarget2<sp/>-<sp/>fEdepInTarget*fEdepInTarget;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>rmsEdep<sp/>=<sp/>(<sp/>rmsEdep<sp/>&gt;<sp/>0.<sp/>)<sp/>?<sp/>std::sqrt(<sp/>rmsEdep*norm<sp/>)<sp/>:<sp/>0.;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Compute<sp/>mean<sp/>charged<sp/>particle<sp/>track<sp/>length<sp/>in<sp/>target<sp/>per<sp/>event<sp/>and<sp/>its<sp/>rms</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>fChargedTrackLengthInTarget<sp/><sp/><sp/><sp/>*=<sp/>norm;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>fChargedTrackLengthInTarget2<sp/><sp/><sp/>*=<sp/>norm;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>G4double<sp/>rmsChTr<sp/><sp/>=<sp/>fChargedTrackLengthInTarget2</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>fChargedTrackLengthInTarget<sp/>*<sp/>fChargedTrackLengthInTarget;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>rmsChTr<sp/>=<sp/>(<sp/>rmsChTr<sp/>&gt;<sp/>0.<sp/>)<sp/>?<sp/>std::sqrt(<sp/>rmsChTr*norm<sp/>)<sp/>:<sp/>0.;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Print<sp/>out<sp/>the<sp/>information</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>G4String<sp/>primInfo<sp/>=<sp/>std::to_string(<sp/>nEvt<sp/>)<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;<sp/>E<sp/>=<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>primInfo<sp/>+=<sp/>std::to_string(<sp/>fYourPrimary-&gt;GetParticleEnergy()<sp/>)<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;<sp/>[MeV]<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>primInfo<sp/>+=<sp/>fYourPrimary-&gt;GetParticleName()<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>G4cout&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n\n&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>G4endl;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>G4cout&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n<sp/>=================================<sp/><sp/>Run<sp/>Summary<sp/>=================================<sp/>\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>Target<sp/>thickness<sp/><sp/><sp/><sp/>:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>fYourDetector-&gt;GetTargetThickness()/CLHEP::cm<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>[cm]<sp/>\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>Target<sp/>material<sp/>info:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/><sp/>fYourDetector-&gt;GetTargetMaterial()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>Primary<sp/>particle:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>primInfo</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>--------------------------------------------------------------------------------<sp/>\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>Mean<sp/>energy<sp/>deposit<sp/>in<sp/>target<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>fEdepInTarget<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>+-<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>rmsEdep<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>[MeV]<sp/>\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>Mean<sp/>charged<sp/>particle<sp/>track<sp/>length<sp/>in<sp/>target:<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>fChargedTrackLengthInTarget<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>+-<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>rmsChTr<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>[mm]<sp/>\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>================================================================================<sp/>\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>G4endl;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/>G4cout&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n\n&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>G4endl;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>write<sp/>the<sp/>energy<sp/>deposit<sp/>histogram<sp/>to<sp/>file<sp/>(ask<sp/>normalization<sp/>i.e.<sp/>&apos;true&apos;)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(fIsActiveEdepHistogram)<sp/>{</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>fEdepHistogram-&gt;WriteToFile(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/src/YourRun.cc"/>
+  </compounddef>
+</doxygen>

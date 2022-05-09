@@ -1,0 +1,154 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="class_your_action_initialization" kind="class" language="C++" prot="public">
+    <compoundname>YourActionInitialization</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">G4VUserActionInitialization</basecompoundref>
+    <includes refid="_your_action_initialization_8hh" local="no">YourActionInitialization.hh</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_your_action_initialization_1ae5864e55e3768116cf834b1bf9562813" prot="private" static="no" mutable="no">
+        <type><ref refid="class_your_detector_construction" kindref="compound">YourDetectorConstruction</ref> *</type>
+        <definition>YourDetectorConstruction* YourActionInitialization::fYourDetector</definition>
+        <argsstring></argsstring>
+        <name>fYourDetector</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourActionInitialization.hh" line="72" column="30" bodyfile="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourActionInitialization.hh" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_your_action_initialization_1ad3ae50652c15442af4282782ab149618" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>YourActionInitialization::YourActionInitialization</definition>
+        <argsstring>(YourDetectorConstruction *det)</argsstring>
+        <name>YourActionInitialization</name>
+        <param>
+          <type><ref refid="class_your_detector_construction" kindref="compound">YourDetectorConstruction</ref> *</type>
+          <declname>det</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourActionInitialization.hh" line="45" column="5" bodyfile="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/src/YourActionInitialization.cc" bodystart="14" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_your_action_initialization_1a6b0b1f41b2a896911918a2f2c443f227" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>YourActionInitialization::~YourActionInitialization</definition>
+        <argsstring>() override</argsstring>
+        <name>~YourActionInitialization</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourActionInitialization.hh" line="46" column="5" bodyfile="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/src/YourActionInitialization.cc" bodystart="19" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="class_your_action_initialization_1ac3d431fd67d9f52e173c18ee19b84c02" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void YourActionInitialization::Build</definition>
+        <argsstring>() const override</argsstring>
+        <name>Build</name>
+        <briefdescription>
+<para>(Pure) Virtual method to be implemented by the user to instantiate User Action class objects. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Each application <bold>must implemnted</bold> this method. It is invoked by all workers at the beginning of the run to instantiate all (worker) thread-local user action objects. At least the construction and registration of the primary generation action must be implemented in this method. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourActionInitialization.hh" line="57" column="10" bodyfile="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/src/YourActionInitialization.cc" bodystart="43" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="class_your_action_initialization_1ad03c7da711cf93767974243775e27e47" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void YourActionInitialization::BuildForMaster</definition>
+        <argsstring>() const override</argsstring>
+        <name>BuildForMaster</name>
+        <briefdescription>
+<para>Virtual method to be implemented by the user to instantiate User RunAction. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This method is invoked only by the master and only your implementation of the <computeroutput>G4VUserRunAction</computeroutput> should be constructed and registered here (see the class description why). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourActionInitialization.hh" line="66" column="10" bodyfile="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/src/YourActionInitialization.cc" bodystart="28" bodyend="37"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>M. Novak </para>
+</simplesect>
+<simplesect kind="date"><para>December 2019</para>
+</simplesect>
+Implementation of the <computeroutput>Geant4</computeroutput> <computeroutput>G4VUserActionInitialization</computeroutput> <bold>mandatory interface</bold> for this user application.</para>
+<para>All user actions (i.e. at least your implementation of the <computeroutput>G4VUserPrimaryGeneratorAction</computeroutput> ,that is <ref refid="class_your_primary_generator_action" kindref="compound">YourPrimaryGeneratorAction</ref> in our case, but all optional actions) objects must be constructed and registered in the <computeroutput>G4RunManager</computeroutput> through a single user action initialization object from this class.</para>
+<para>The <emphasis>construction</emphasis> and <emphasis>registration</emphasis> of all user action objects must be implemented in the <ref refid="class_your_action_initialization_1ac3d431fd67d9f52e173c18ee19b84c02" kindref="member">Build()</ref> interface (pure virtual) method that is invoked by all worker threads before starting the run. The additional <ref refid="class_your_action_initialization_1ad03c7da711cf93767974243775e27e47" kindref="member">BuildForMaster()</ref> virtual method of the base class is invoked by only the master thread. No other user actions than implementation of the <computeroutput>G4UserRunAction</computeroutput> should be constructed here!</para>
+<para>According to the above, we construct and register only <ref refid="class_your_run_action" kindref="compound">YourRunAction</ref> object in the <ref refid="class_your_action_initialization_1ad03c7da711cf93767974243775e27e47" kindref="member">BuildForMaster()</ref> interface method while all the user actions are constructed and created in the <ref refid="class_your_action_initialization_1ac3d431fd67d9f52e173c18ee19b84c02" kindref="member">Build()</ref> method. This is because, the master run action object <ref refid="class_your_run_action_1addaa4d7da00a40fbaa2f652143989602" kindref="member">YourRunAction::GenerateRun()</ref> method is invoked by the master at the beginning of the run to create its own <ref refid="class_your_run" kindref="compound">YourRun</ref> object. The same is done for each workers. Hoever, unlike the individual worker <ref refid="class_your_run" kindref="compound">YourRun</ref> objects, that are used during the simulatio to collect thread-local infomation, the single master <ref refid="class_your_run" kindref="compound">YourRun</ref> object is untouched till the end of the run. It will be used only to collect/merge the individual thread-local run infomation into one global <ref refid="class_your_run" kindref="compound">YourRun</ref> obejct after all worker finished the simulation. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>G4VUserActionInitialization</label>
+      </node>
+      <node id="1">
+        <label>YourActionInitialization</label>
+        <link refid="class_your_action_initialization"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="5">
+        <label>YourDetectorMessenger</label>
+        <link refid="class_your_detector_messenger"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>fYourDetector</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>G4VUserActionInitialization</label>
+      </node>
+      <node id="4">
+        <label>G4VUserDetectorConstruction</label>
+      </node>
+      <node id="1">
+        <label>YourActionInitialization</label>
+        <link refid="class_your_action_initialization"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>fYourDetector</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>G4UImessenger</label>
+      </node>
+      <node id="3">
+        <label>YourDetectorConstruction</label>
+        <link refid="class_your_detector_construction"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>fDetMessenger</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourActionInitialization.hh" line="39" column="1" bodyfile="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourActionInitialization.hh" bodystart="39" bodyend="73"/>
+    <listofallmembers>
+      <member refid="class_your_action_initialization_1ac3d431fd67d9f52e173c18ee19b84c02" prot="public" virt="non-virtual"><scope>YourActionInitialization</scope><name>Build</name></member>
+      <member refid="class_your_action_initialization_1ad03c7da711cf93767974243775e27e47" prot="public" virt="non-virtual"><scope>YourActionInitialization</scope><name>BuildForMaster</name></member>
+      <member refid="class_your_action_initialization_1ae5864e55e3768116cf834b1bf9562813" prot="private" virt="non-virtual"><scope>YourActionInitialization</scope><name>fYourDetector</name></member>
+      <member refid="class_your_action_initialization_1ad3ae50652c15442af4282782ab149618" prot="public" virt="non-virtual"><scope>YourActionInitialization</scope><name>YourActionInitialization</name></member>
+      <member refid="class_your_action_initialization_1a6b0b1f41b2a896911918a2f2c443f227" prot="public" virt="non-virtual"><scope>YourActionInitialization</scope><name>~YourActionInitialization</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

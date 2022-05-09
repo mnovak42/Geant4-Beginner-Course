@@ -1,0 +1,142 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="class_v_shape2_d" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>VShape2D</compoundname>
+    <derivedcompoundref refid="class_circle" prot="public" virt="non-virtual">Circle</derivedcompoundref>
+    <derivedcompoundref refid="class_square" prot="public" virt="non-virtual">Square</derivedcompoundref>
+    <includes refid="_v_shape2_d_8hh" local="no">VShape2D.hh</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_v_shape2_d_1a58711c52b6ddbf714dcf3d71055293d2" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string VShape2D::fName</definition>
+        <argsstring></argsstring>
+        <name>fName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/preliminaries/cpp-interface/include/VShape2D.hh" line="74" column="15" bodyfile="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/preliminaries/cpp-interface/include/VShape2D.hh" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_v_shape2_d_1af437d1216aa29be49a9dcad89c95b4af" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>VShape2D::VShape2D</definition>
+        <argsstring>(const std::string &amp;name)</argsstring>
+        <name>VShape2D</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/preliminaries/cpp-interface/include/VShape2D.hh" line="37" column="3" bodyfile="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/preliminaries/cpp-interface/include/VShape2D.hh" bodystart="37" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="class_v_shape2_d_1ac9fb57adc9dc2afee0d68e9b5e56b26d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual VShape2D::~VShape2D</definition>
+        <argsstring>()</argsstring>
+        <name>~VShape2D</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/preliminaries/cpp-interface/include/VShape2D.hh" line="39" column="11" bodyfile="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/preliminaries/cpp-interface/include/VShape2D.hh" bodystart="39" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="class_v_shape2_d_1ac40f961d36ef68fce3adf87f6fd3bd34" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const std::string &amp;</type>
+        <definition>const std::string&amp; VShape2D::GetName</definition>
+        <argsstring>() const</argsstring>
+        <name>GetName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/preliminaries/cpp-interface/include/VShape2D.hh" line="42" column="21" bodyfile="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/preliminaries/cpp-interface/include/VShape2D.hh" bodystart="42" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="class_v_shape2_d_1a3c385a0963ad684273a58f81db92254a" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>double</type>
+        <definition>virtual double VShape2D::Area</definition>
+        <argsstring>()=0</argsstring>
+        <name>Area</name>
+        <reimplementedby refid="class_circle_1a86ac61f5e826f24c2b338362fc14197e">Area</reimplementedby>
+        <reimplementedby refid="class_square_1a1f441aa115566d3c149c016b0d9181a0">Area</reimplementedby>
+        <briefdescription>
+<para>The area computation <emphasis>interface</emphasis> method. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Example of a <bold>pure virtual</bold> method that makes this base class <bold>abstract</bold>.</para>
+<para>Each 2D shape has an area but all computed differently depending on the actual type of the shape. This is why it&apos;s a <bold>pure virtual method</bold>, i.e. <bold>each derived class must implement</bold>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/preliminaries/cpp-interface/include/VShape2D.hh" line="53" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_v_shape2_d_1a15a643173e0c2581124f6bd2e139a06e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>double</type>
+        <definition>virtual double VShape2D::Perimeter</definition>
+        <argsstring>()</argsstring>
+        <name>Perimeter</name>
+        <reimplementedby refid="class_square_1aa432e12bd2ca6c98164ea3d12aadc625">Perimeter</reimplementedby>
+        <briefdescription>
+<para><emphasis>Optional</emphasis> perimeter computation method. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Example of a <bold>virtual</bold> method with defult implementation in the base class.</para>
+<para>Each 2D shape has its own way of computing the perimeter just like the area. However, we decided that actually the perimeter is not important for our algorithm in most cases of shapes. Therefore, this default implementation is available for each derived class and will be invoked unless the concrete derived class provides its own implementation. The derived <computeroutput><ref refid="class_square" kindref="compound">Square</ref></computeroutput> class implements this method while <computeroutput><ref refid="class_circle" kindref="compound">Circle</ref></computeroutput> relyes on this defult base class implementation. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/preliminaries/cpp-interface/include/VShape2D.hh" line="68" column="18" bodyfile="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/preliminaries/cpp-interface/include/VShape2D.hh" bodystart="68" bodyend="68"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>M. Novak </para>
+</simplesect>
+<simplesect kind="date"><para>May 2022</para>
+</simplesect>
+<bold>Interface</bold>, i.e. base class with a <bold>pure virtual</bold> method, for 2D shape area computations.</para>
+<para>This base class is an <bold>interface</bold> for 2D shape area computations. It has its <bold>pure virtual</bold> <ref refid="class_v_shape2_d_1a3c385a0963ad684273a58f81db92254a" kindref="member">Area()</ref> method. Therefore, this method <bold>must be implemented by each derived</bold> classes. This ensures, that whatever type of an actuall 2D shape is (derived from this base class) the <ref refid="class_v_shape2_d_1a3c385a0963ad684273a58f81db92254a" kindref="member">Area()</ref> interface method will be available. Therefore, the rest of the code can be developed without knowing what 2D shapes will be eventually there: they will be all <computeroutput><ref refid="class_v_shape2_d" kindref="compound">VShape2D</ref></computeroutput> types providing their own implementation of the <ref refid="class_v_shape2_d_1a3c385a0963ad684273a58f81db92254a" kindref="member">Area()</ref> interface method defined in this base class.</para>
+<para>Note, that the <bold>pure virtual</bold> method makes this base class <bold>abstract</bold>, i.e. objects cannot be instantiated directly form this base class. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>Square</label>
+        <link refid="class_square"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Circle</label>
+        <link refid="class_circle"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>VShape2D</label>
+        <link refid="class_v_shape2_d"/>
+      </node>
+    </inheritancegraph>
+    <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/preliminaries/cpp-interface/include/VShape2D.hh" line="32" column="1" bodyfile="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/preliminaries/cpp-interface/include/VShape2D.hh" bodystart="32" bodyend="76"/>
+    <listofallmembers>
+      <member refid="class_v_shape2_d_1a3c385a0963ad684273a58f81db92254a" prot="public" virt="pure-virtual"><scope>VShape2D</scope><name>Area</name></member>
+      <member refid="class_v_shape2_d_1a58711c52b6ddbf714dcf3d71055293d2" prot="private" virt="non-virtual"><scope>VShape2D</scope><name>fName</name></member>
+      <member refid="class_v_shape2_d_1ac40f961d36ef68fce3adf87f6fd3bd34" prot="public" virt="non-virtual"><scope>VShape2D</scope><name>GetName</name></member>
+      <member refid="class_v_shape2_d_1a15a643173e0c2581124f6bd2e139a06e" prot="public" virt="virtual"><scope>VShape2D</scope><name>Perimeter</name></member>
+      <member refid="class_v_shape2_d_1af437d1216aa29be49a9dcad89c95b4af" prot="public" virt="non-virtual"><scope>VShape2D</scope><name>VShape2D</name></member>
+      <member refid="class_v_shape2_d_1ac9fb57adc9dc2afee0d68e9b5e56b26d" prot="public" virt="virtual"><scope>VShape2D</scope><name>~VShape2D</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,215 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="class_your_run_action_messenger" kind="class" language="C++" prot="public">
+    <compoundname>YourRunActionMessenger</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">G4UImessenger</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_your_run_action_messenger_1a85a338ba3a85d527376bfd1149012f2e" prot="private" static="no" mutable="no">
+        <type><ref refid="class_your_run_action" kindref="compound">YourRunAction</ref> *</type>
+        <definition>YourRunAction* YourRunActionMessenger::fYourRunAction</definition>
+        <argsstring></argsstring>
+        <name>fYourRunAction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourRunActionMessenger.hh" line="29" column="31" bodyfile="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourRunActionMessenger.hh" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_your_run_action_messenger_1a6934cefb226be9995bf3e3ada3f265f2" prot="private" static="no" mutable="no">
+        <type>G4UIdirectory *</type>
+        <definition>G4UIdirectory* YourRunActionMessenger::fDirCMD</definition>
+        <argsstring></argsstring>
+        <name>fDirCMD</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourRunActionMessenger.hh" line="31" column="31" bodyfile="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourRunActionMessenger.hh" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_your_run_action_messenger_1a98efcc364efa8e8b7375c810971b8429" prot="private" static="no" mutable="no">
+        <type>G4UIcmdWithAString *</type>
+        <definition>G4UIcmdWithAString* YourRunActionMessenger::fEdepHistogramCMD</definition>
+        <argsstring></argsstring>
+        <name>fEdepHistogramCMD</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourRunActionMessenger.hh" line="32" column="31" bodyfile="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourRunActionMessenger.hh" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_your_run_action_messenger_1a2fc883e38a3899c3cbebc4518ccfe5b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>YourRunActionMessenger::YourRunActionMessenger</definition>
+        <argsstring>(YourRunAction *runAction)</argsstring>
+        <name>YourRunActionMessenger</name>
+        <param>
+          <type><ref refid="class_your_run_action" kindref="compound">YourRunAction</ref> *</type>
+          <declname>runAction</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourRunActionMessenger.hh" line="19" column="5" bodyfile="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/src/YourRunActionMessenger.cc" bodystart="12" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="class_your_run_action_messenger_1a595012102da46112a81195240f60c22a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>YourRunActionMessenger::~YourRunActionMessenger</definition>
+        <argsstring>()</argsstring>
+        <name>~YourRunActionMessenger</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourRunActionMessenger.hh" line="20" column="4" bodyfile="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/src/YourRunActionMessenger.cc" bodystart="36" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="class_your_run_action_messenger_1ace8157ecdbae17b1300529ad44338f38" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void YourRunActionMessenger::SetNewValue</definition>
+        <argsstring>(G4UIcommand *, G4String) override</argsstring>
+        <name>SetNewValue</name>
+        <param>
+          <type>G4UIcommand *</type>
+          <defname>command</defname>
+        </param>
+        <param>
+          <type>G4String</type>
+          <defname>newValue</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourRunActionMessenger.hh" line="23" column="10" bodyfile="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/src/YourRunActionMessenger.cc" bodystart="42" bodyend="63"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>G4UImessenger</label>
+      </node>
+      <node id="1">
+        <label>YourRunActionMessenger</label>
+        <link refid="class_your_run_action_messenger"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="9">
+        <label>YourDetectorMessenger</label>
+        <link refid="class_your_detector_messenger"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>fYourDetector</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>YourPrimaryGeneratorAction</label>
+        <link refid="class_your_primary_generator_action"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>fYourDetector</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>G4VUserDetectorConstruction</label>
+      </node>
+      <node id="6">
+        <label>G4VUserPrimaryGeneratorAction</label>
+      </node>
+      <node id="11">
+        <label>G4Run</label>
+      </node>
+      <node id="10">
+        <label>YourRun</label>
+        <link refid="class_your_run"/>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>fEdepHistogram</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>fYourPrimary</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>fYourDetector</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>G4UserRunAction</label>
+      </node>
+      <node id="2">
+        <label>G4UImessenger</label>
+      </node>
+      <node id="3">
+        <label>YourRunAction</label>
+        <link refid="class_your_run_action"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>fYourPrimary</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>fYourDetector</edgelabel>
+        </childnode>
+        <childnode refid="1" relation="usage">
+          <edgelabel>fMessenger</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>fYourRun</edgelabel>
+        </childnode>
+      </node>
+      <node id="12">
+        <label>Hist</label>
+        <link refid="class_hist"/>
+      </node>
+      <node id="7">
+        <label>YourDetectorConstruction</label>
+        <link refid="class_your_detector_construction"/>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>fDetMessenger</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>YourRunActionMessenger</label>
+        <link refid="class_your_run_action_messenger"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>fYourRunAction</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourRunActionMessenger.hh" line="13" column="1" bodyfile="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourRunActionMessenger.hh" bodystart="13" bodyend="33"/>
+    <listofallmembers>
+      <member refid="class_your_run_action_messenger_1a6934cefb226be9995bf3e3ada3f265f2" prot="private" virt="non-virtual"><scope>YourRunActionMessenger</scope><name>fDirCMD</name></member>
+      <member refid="class_your_run_action_messenger_1a98efcc364efa8e8b7375c810971b8429" prot="private" virt="non-virtual"><scope>YourRunActionMessenger</scope><name>fEdepHistogramCMD</name></member>
+      <member refid="class_your_run_action_messenger_1a85a338ba3a85d527376bfd1149012f2e" prot="private" virt="non-virtual"><scope>YourRunActionMessenger</scope><name>fYourRunAction</name></member>
+      <member refid="class_your_run_action_messenger_1ace8157ecdbae17b1300529ad44338f38" prot="public" virt="non-virtual"><scope>YourRunActionMessenger</scope><name>SetNewValue</name></member>
+      <member refid="class_your_run_action_messenger_1a2fc883e38a3899c3cbebc4518ccfe5b0" prot="public" virt="non-virtual"><scope>YourRunActionMessenger</scope><name>YourRunActionMessenger</name></member>
+      <member refid="class_your_run_action_messenger_1a595012102da46112a81195240f60c22a" prot="public" virt="non-virtual"><scope>YourRunActionMessenger</scope><name>~YourRunActionMessenger</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

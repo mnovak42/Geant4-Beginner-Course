@@ -1,0 +1,199 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="class_your_event_action" kind="class" language="C++" prot="public">
+    <compoundname>YourEventAction</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">G4UserEventAction</basecompoundref>
+    <includes refid="_your_event_action_8hh" local="no">YourEventAction.hh</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_your_event_action_1a62ca226fdcd1270e4a148065eacff717" prot="private" static="no" mutable="no">
+        <type>G4double</type>
+        <definition>G4double YourEventAction::fEdepPerEvt</definition>
+        <argsstring></argsstring>
+        <name>fEdepPerEvt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourEventAction.hh" line="68" column="16" bodyfile="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourEventAction.hh" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_your_event_action_1aab775ba8c914f17308ba886bb7234c4f" prot="private" static="no" mutable="no">
+        <type>G4double</type>
+        <definition>G4double YourEventAction::fChTrackLengthPerEvt</definition>
+        <argsstring></argsstring>
+        <name>fChTrackLengthPerEvt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourEventAction.hh" line="69" column="16" bodyfile="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourEventAction.hh" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_your_event_action_1a19587557c25d682de46b25c2cc3bcbee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>YourEventAction::YourEventAction</definition>
+        <argsstring>()</argsstring>
+        <name>YourEventAction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourEventAction.hh" line="28" column="5" bodyfile="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/src/YourEventAction.cc" bodystart="7" bodyend="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_your_event_action_1a08b581f19b950cae0c9065e558dfe76e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>YourEventAction::~YourEventAction</definition>
+        <argsstring>() override</argsstring>
+        <name>~YourEventAction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourEventAction.hh" line="29" column="5" bodyfile="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/src/YourEventAction.cc" bodystart="13" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="class_your_event_action_1adf3fd381562d250a5b6d7dab456e3d6a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void YourEventAction::BeginOfEventAction</definition>
+        <argsstring>(const G4Event *evt) override</argsstring>
+        <name>BeginOfEventAction</name>
+        <param>
+          <type>const G4Event *</type>
+          <declname>evt</declname>
+        </param>
+        <briefdescription>
+<para>Virtial method that is called by the RunManager before the start of each event. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is the point where we usually reset some local variables that are used to accumulate information during the simnulation of a given event.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">evt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the <computeroutput>G4Event</computeroutput> object that will be simulated now. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourEventAction.hh" line="39" column="10" bodyfile="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/src/YourEventAction.cc" bodystart="17" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="class_your_event_action_1a231bc50b48323bc82e93a58547a2bdb6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void YourEventAction::EndOfEventAction</definition>
+        <argsstring>(const G4Event *evt) override</argsstring>
+        <name>EndOfEventAction</name>
+        <param>
+          <type>const G4Event *</type>
+          <declname>evt</declname>
+        </param>
+        <briefdescription>
+<para>Virtial method that is called by the RunManager after the end of each event. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is the point where we usually propagate to upper level (i.e. usualy to the run (<ref refid="class_your_run" kindref="compound">YourRun</ref>) obejct) local infomation, that has been collected during the simnulation of a given event.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">evt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the <computeroutput>G4Event</computeroutput> object that simulated has just been completed. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourEventAction.hh" line="49" column="10" bodyfile="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/src/YourEventAction.cc" bodystart="26" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="class_your_event_action_1a5f49649ef2e565e032eec0fd9ed4f7f9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void YourEventAction::AddEnergyDepositPerStep</definition>
+        <argsstring>(const G4double edepAlongTheStep)</argsstring>
+        <name>AddEnergyDepositPerStep</name>
+        <param>
+          <type>const G4double</type>
+          <declname>edepAlongTheStep</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourEventAction.hh" line="58" column="10" bodyfile="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourEventAction.hh" bodystart="58" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="class_your_event_action_1aeeb194c680327b35bec4cd0d4e4241cb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void YourEventAction::AddChargedTrackLengthPerStep</definition>
+        <argsstring>(const G4double trackLAlongTheStep)</argsstring>
+        <name>AddChargedTrackLengthPerStep</name>
+        <param>
+          <type>const G4double</type>
+          <declname>trackLAlongTheStep</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourEventAction.hh" line="61" column="10" bodyfile="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourEventAction.hh" bodystart="61" bodyend="63"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>M. Novak </para>
+</simplesect>
+<simplesect kind="date"><para>December 2019</para>
+</simplesect>
+Implementation of the <computeroutput>Geant4</computeroutput> <computeroutput>G4UserEventAction</computeroutput> <bold>optional interface</bold> for this user application.</para>
+<para>This interface gives the possibility for interacting with the simulation before (<ref refid="class_your_event_action_1adf3fd381562d250a5b6d7dab456e3d6a" kindref="member">BeginOfEventAction()</ref>) and after (<ref refid="class_your_event_action_1a231bc50b48323bc82e93a58547a2bdb6" kindref="member">EndOfEventAction()</ref>) the simulation of each event. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>YourEventAction</label>
+        <link refid="class_your_event_action"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>G4UserEventAction</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>YourEventAction</label>
+        <link refid="class_your_event_action"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>G4UserEventAction</label>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourEventAction.hh" line="22" column="1" bodyfile="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourEventAction.hh" bodystart="22" bodyend="71"/>
+    <listofallmembers>
+      <member refid="class_your_event_action_1aeeb194c680327b35bec4cd0d4e4241cb" prot="public" virt="non-virtual"><scope>YourEventAction</scope><name>AddChargedTrackLengthPerStep</name></member>
+      <member refid="class_your_event_action_1a5f49649ef2e565e032eec0fd9ed4f7f9" prot="public" virt="non-virtual"><scope>YourEventAction</scope><name>AddEnergyDepositPerStep</name></member>
+      <member refid="class_your_event_action_1adf3fd381562d250a5b6d7dab456e3d6a" prot="public" virt="non-virtual"><scope>YourEventAction</scope><name>BeginOfEventAction</name></member>
+      <member refid="class_your_event_action_1a231bc50b48323bc82e93a58547a2bdb6" prot="public" virt="non-virtual"><scope>YourEventAction</scope><name>EndOfEventAction</name></member>
+      <member refid="class_your_event_action_1aab775ba8c914f17308ba886bb7234c4f" prot="private" virt="non-virtual"><scope>YourEventAction</scope><name>fChTrackLengthPerEvt</name></member>
+      <member refid="class_your_event_action_1a62ca226fdcd1270e4a148065eacff717" prot="private" virt="non-virtual"><scope>YourEventAction</scope><name>fEdepPerEvt</name></member>
+      <member refid="class_your_event_action_1a19587557c25d682de46b25c2cc3bcbee" prot="public" virt="non-virtual"><scope>YourEventAction</scope><name>YourEventAction</name></member>
+      <member refid="class_your_event_action_1a08b581f19b950cae0c9065e558dfe76e" prot="public" virt="non-virtual"><scope>YourEventAction</scope><name>~YourEventAction</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

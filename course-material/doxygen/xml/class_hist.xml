@@ -1,0 +1,454 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="class_hist" kind="class" language="C++" prot="public">
+    <compoundname>Hist</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_hist_1ae15ff743533e88679e76dd81f3b2e5e3" prot="private" static="no" mutable="no">
+        <type>G4String</type>
+        <definition>G4String Hist::fFileName</definition>
+        <argsstring></argsstring>
+        <name>fFileName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/Hist.hh" line="70" column="25" bodyfile="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/Hist.hh" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_hist_1a570c5efff16c51fc68ff49c5af905bea" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; G4double &gt;</type>
+        <definition>std::vector&lt;G4double&gt; Hist::fx</definition>
+        <argsstring></argsstring>
+        <name>fx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/Hist.hh" line="71" column="15" bodyfile="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/Hist.hh" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_hist_1a1bfd3031be25fcac5a26e9de8b85b020" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; G4double &gt;</type>
+        <definition>std::vector&lt;G4double&gt; Hist::fy</definition>
+        <argsstring></argsstring>
+        <name>fy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/Hist.hh" line="72" column="15" bodyfile="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/Hist.hh" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_hist_1a64ebc9bc8f05f27b08033c1f3fede33e" prot="private" static="no" mutable="no">
+        <type>G4double</type>
+        <definition>G4double Hist::fMin</definition>
+        <argsstring></argsstring>
+        <name>fMin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/Hist.hh" line="73" column="25" bodyfile="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/Hist.hh" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_hist_1aa456258afdf48967184da6e858cd70d6" prot="private" static="no" mutable="no">
+        <type>G4double</type>
+        <definition>G4double Hist::fMax</definition>
+        <argsstring></argsstring>
+        <name>fMax</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/Hist.hh" line="74" column="25" bodyfile="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/Hist.hh" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_hist_1a0d49b3e2560a8e352d4b0135ef8a2ba6" prot="private" static="no" mutable="no">
+        <type>G4double</type>
+        <definition>G4double Hist::fDelta</definition>
+        <argsstring></argsstring>
+        <name>fDelta</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/Hist.hh" line="75" column="25" bodyfile="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/Hist.hh" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_hist_1a3b8e255a9f9c53b52124d2fda743f7df" prot="private" static="no" mutable="no">
+        <type>G4double</type>
+        <definition>G4double Hist::fInvDelta</definition>
+        <argsstring></argsstring>
+        <name>fInvDelta</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/Hist.hh" line="76" column="25" bodyfile="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/Hist.hh" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_hist_1aa75cca4b1040f745104186daa1a27fad" prot="private" static="no" mutable="no">
+        <type>G4double</type>
+        <definition>G4double Hist::fSum</definition>
+        <argsstring></argsstring>
+        <name>fSum</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/Hist.hh" line="77" column="25" bodyfile="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/Hist.hh" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_hist_1aaa6dc5f8fa6cb46bf11acddf084fd57c" prot="private" static="no" mutable="no">
+        <type>G4int</type>
+        <definition>G4int Hist::fNumBins</definition>
+        <argsstring></argsstring>
+        <name>fNumBins</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/Hist.hh" line="78" column="25" bodyfile="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/Hist.hh" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_hist_1ad00be463085f7e44dbd22f13cd0e4634" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Hist::Hist</definition>
+        <argsstring>(const G4String &amp;filename, G4double min, G4double max, G4int numbin)</argsstring>
+        <name>Hist</name>
+        <param>
+          <type>const G4String &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>G4double</type>
+          <declname>min</declname>
+        </param>
+        <param>
+          <type>G4double</type>
+          <declname>max</declname>
+        </param>
+        <param>
+          <type>G4int</type>
+          <declname>numbin</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/Hist.hh" line="27" column="3" bodyfile="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/src/Hist.cc" bodystart="5" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hist_1ad41ccbb4b5752f197c0089fd68f39ff4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Hist::Hist</definition>
+        <argsstring>(const G4String &amp;filename, G4double min, G4double max, G4double delta)</argsstring>
+        <name>Hist</name>
+        <param>
+          <type>const G4String &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>G4double</type>
+          <declname>min</declname>
+        </param>
+        <param>
+          <type>G4double</type>
+          <declname>max</declname>
+        </param>
+        <param>
+          <type>G4double</type>
+          <declname>delta</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/Hist.hh" line="29" column="3" bodyfile="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/src/Hist.cc" bodystart="18" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hist_1a33efa5f5905fa72c4ea41d416c7d5456" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Hist::~Hist</definition>
+        <argsstring>()</argsstring>
+        <name>~Hist</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/Hist.hh" line="31" column="3" bodyfile="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/Hist.hh" bodystart="31" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hist_1a79f2da3286205ec4cb025cddfd307f8a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Hist::Initialize</definition>
+        <argsstring>()</argsstring>
+        <name>Initialize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/Hist.hh" line="33" column="8" bodyfile="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/src/Hist.cc" bodystart="32" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hist_1a9b05f2cb9f96439ab2e2a32dd156b635" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Hist::ReSet</definition>
+        <argsstring>(const G4String &amp;filename, G4double min, G4double max, G4int numbins)</argsstring>
+        <name>ReSet</name>
+        <param>
+          <type>const G4String &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>G4double</type>
+          <declname>min</declname>
+        </param>
+        <param>
+          <type>G4double</type>
+          <declname>max</declname>
+        </param>
+        <param>
+          <type>G4int</type>
+          <declname>numbins</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/Hist.hh" line="35" column="8" bodyfile="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/Hist.hh" bodystart="35" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hist_1a17b2c52a462d4d23b2939a3878a7e4e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Hist::Fill</definition>
+        <argsstring>(G4double x)</argsstring>
+        <name>Fill</name>
+        <param>
+          <type>G4double</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/Hist.hh" line="46" column="8" bodyfile="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/src/Hist.cc" bodystart="41" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hist_1a0fbc3986b6754f62a7396a2e74755a33" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Hist::Fill</definition>
+        <argsstring>(G4double x, G4double w)</argsstring>
+        <name>Fill</name>
+        <param>
+          <type>G4double</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>G4double</type>
+          <declname>w</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/Hist.hh" line="49" column="8" bodyfile="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/src/Hist.cc" bodystart="59" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hist_1af1a36a92f64c9a0a351a14f7021cdea7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>G4int</type>
+        <definition>G4int Hist::GetNumBins</definition>
+        <argsstring>() const</argsstring>
+        <name>GetNumBins</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/Hist.hh" line="51" column="13" bodyfile="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/Hist.hh" bodystart="51" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hist_1a14d387ff80c3ed13f85b35584b17670b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>G4double</type>
+        <definition>G4double Hist::GetDelta</definition>
+        <argsstring>() const</argsstring>
+        <name>GetDelta</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/Hist.hh" line="52" column="13" bodyfile="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/Hist.hh" bodystart="52" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hist_1aef448eb90d2667880dd9ff1c496611e2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>G4double</type>
+        <definition>G4double Hist::GetMin</definition>
+        <argsstring>() const</argsstring>
+        <name>GetMin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/Hist.hh" line="53" column="13" bodyfile="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/Hist.hh" bodystart="53" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hist_1aec279f15b4947e7b8f640821ac4201ef" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>G4double</type>
+        <definition>G4double Hist::GetMax</definition>
+        <argsstring>() const</argsstring>
+        <name>GetMax</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/Hist.hh" line="54" column="13" bodyfile="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/Hist.hh" bodystart="54" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hist_1ac510b43d19af3b68a09c54467a3d9e92" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>G4double</type>
+        <definition>G4double Hist::GetSum</definition>
+        <argsstring>() const</argsstring>
+        <name>GetSum</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/Hist.hh" line="55" column="13" bodyfile="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/Hist.hh" bodystart="55" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hist_1a106d962446609b18d5cab47ae33a0cda" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const std::vector&lt; G4double &gt; &amp;</type>
+        <definition>const std::vector&lt;G4double&gt;&amp; Hist::GetX</definition>
+        <argsstring>() const</argsstring>
+        <name>GetX</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/Hist.hh" line="56" column="21" bodyfile="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/Hist.hh" bodystart="56" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hist_1a26200c195ec15814435d8e166c487846" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const std::vector&lt; G4double &gt; &amp;</type>
+        <definition>const std::vector&lt;G4double&gt;&amp; Hist::GetY</definition>
+        <argsstring>() const</argsstring>
+        <name>GetY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/Hist.hh" line="57" column="21" bodyfile="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/Hist.hh" bodystart="57" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hist_1aecd5bf6b1964f825abfd052bf4b930a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Hist::WriteToFile</definition>
+        <argsstring>(G4bool isNorm=false)</argsstring>
+        <name>WriteToFile</name>
+        <param>
+          <type>G4bool</type>
+          <declname>isNorm</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/Hist.hh" line="60" column="8" bodyfile="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/src/Hist.cc" bodystart="76" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hist_1a118fc71052d66594ab3a0a112fbc09ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Hist::WriteToFile</definition>
+        <argsstring>(G4double norm)</argsstring>
+        <name>WriteToFile</name>
+        <param>
+          <type>G4double</type>
+          <declname>norm</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/Hist.hh" line="61" column="8" bodyfile="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/src/Hist.cc" bodystart="95" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hist_1a606e18630f082d8c7192c04685cf6770" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Hist::Add</definition>
+        <argsstring>(const Hist *hist)</argsstring>
+        <name>Add</name>
+        <param>
+          <type>const <ref refid="class_hist" kindref="compound">Hist</ref> *</type>
+          <declname>hist</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/Hist.hh" line="65" column="8" bodyfile="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/src/Hist.cc" bodystart="109" bodyend="121"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/Hist.hh" line="23" column="1" bodyfile="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/Hist.hh" bodystart="23" bodyend="79"/>
+    <listofallmembers>
+      <member refid="class_hist_1a606e18630f082d8c7192c04685cf6770" prot="public" virt="non-virtual"><scope>Hist</scope><name>Add</name></member>
+      <member refid="class_hist_1a0d49b3e2560a8e352d4b0135ef8a2ba6" prot="private" virt="non-virtual"><scope>Hist</scope><name>fDelta</name></member>
+      <member refid="class_hist_1ae15ff743533e88679e76dd81f3b2e5e3" prot="private" virt="non-virtual"><scope>Hist</scope><name>fFileName</name></member>
+      <member refid="class_hist_1a17b2c52a462d4d23b2939a3878a7e4e4" prot="public" virt="non-virtual"><scope>Hist</scope><name>Fill</name></member>
+      <member refid="class_hist_1a0fbc3986b6754f62a7396a2e74755a33" prot="public" virt="non-virtual"><scope>Hist</scope><name>Fill</name></member>
+      <member refid="class_hist_1a3b8e255a9f9c53b52124d2fda743f7df" prot="private" virt="non-virtual"><scope>Hist</scope><name>fInvDelta</name></member>
+      <member refid="class_hist_1aa456258afdf48967184da6e858cd70d6" prot="private" virt="non-virtual"><scope>Hist</scope><name>fMax</name></member>
+      <member refid="class_hist_1a64ebc9bc8f05f27b08033c1f3fede33e" prot="private" virt="non-virtual"><scope>Hist</scope><name>fMin</name></member>
+      <member refid="class_hist_1aaa6dc5f8fa6cb46bf11acddf084fd57c" prot="private" virt="non-virtual"><scope>Hist</scope><name>fNumBins</name></member>
+      <member refid="class_hist_1aa75cca4b1040f745104186daa1a27fad" prot="private" virt="non-virtual"><scope>Hist</scope><name>fSum</name></member>
+      <member refid="class_hist_1a570c5efff16c51fc68ff49c5af905bea" prot="private" virt="non-virtual"><scope>Hist</scope><name>fx</name></member>
+      <member refid="class_hist_1a1bfd3031be25fcac5a26e9de8b85b020" prot="private" virt="non-virtual"><scope>Hist</scope><name>fy</name></member>
+      <member refid="class_hist_1a14d387ff80c3ed13f85b35584b17670b" prot="public" virt="non-virtual"><scope>Hist</scope><name>GetDelta</name></member>
+      <member refid="class_hist_1aec279f15b4947e7b8f640821ac4201ef" prot="public" virt="non-virtual"><scope>Hist</scope><name>GetMax</name></member>
+      <member refid="class_hist_1aef448eb90d2667880dd9ff1c496611e2" prot="public" virt="non-virtual"><scope>Hist</scope><name>GetMin</name></member>
+      <member refid="class_hist_1af1a36a92f64c9a0a351a14f7021cdea7" prot="public" virt="non-virtual"><scope>Hist</scope><name>GetNumBins</name></member>
+      <member refid="class_hist_1ac510b43d19af3b68a09c54467a3d9e92" prot="public" virt="non-virtual"><scope>Hist</scope><name>GetSum</name></member>
+      <member refid="class_hist_1a106d962446609b18d5cab47ae33a0cda" prot="public" virt="non-virtual"><scope>Hist</scope><name>GetX</name></member>
+      <member refid="class_hist_1a26200c195ec15814435d8e166c487846" prot="public" virt="non-virtual"><scope>Hist</scope><name>GetY</name></member>
+      <member refid="class_hist_1ad00be463085f7e44dbd22f13cd0e4634" prot="public" virt="non-virtual"><scope>Hist</scope><name>Hist</name></member>
+      <member refid="class_hist_1ad41ccbb4b5752f197c0089fd68f39ff4" prot="public" virt="non-virtual"><scope>Hist</scope><name>Hist</name></member>
+      <member refid="class_hist_1a79f2da3286205ec4cb025cddfd307f8a" prot="public" virt="non-virtual"><scope>Hist</scope><name>Initialize</name></member>
+      <member refid="class_hist_1a9b05f2cb9f96439ab2e2a32dd156b635" prot="public" virt="non-virtual"><scope>Hist</scope><name>ReSet</name></member>
+      <member refid="class_hist_1aecd5bf6b1964f825abfd052bf4b930a2" prot="public" virt="non-virtual"><scope>Hist</scope><name>WriteToFile</name></member>
+      <member refid="class_hist_1a118fc71052d66594ab3a0a112fbc09ba" prot="public" virt="non-virtual"><scope>Hist</scope><name>WriteToFile</name></member>
+      <member refid="class_hist_1a33efa5f5905fa72c4ea41d416c7d5456" prot="public" virt="non-virtual"><scope>Hist</scope><name>~Hist</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

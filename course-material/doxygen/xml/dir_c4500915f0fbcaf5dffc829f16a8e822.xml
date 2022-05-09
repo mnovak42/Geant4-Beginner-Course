@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_c4500915f0fbcaf5dffc829f16a8e822" kind="dir">
+    <compoundname>/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include</compoundname>
+    <innerfile refid="_hist_8hh">Hist.hh</innerfile>
+    <innerfile refid="_your_action_initialization_8hh">YourActionInitialization.hh</innerfile>
+    <innerfile refid="_your_detector_construction_8hh">YourDetectorConstruction.hh</innerfile>
+    <innerfile refid="_your_detector_messenger_8hh">YourDetectorMessenger.hh</innerfile>
+    <innerfile refid="_your_event_action_8hh">YourEventAction.hh</innerfile>
+    <innerfile refid="_your_primary_generator_action_8hh">YourPrimaryGeneratorAction.hh</innerfile>
+    <innerfile refid="_your_run_8hh">YourRun.hh</innerfile>
+    <innerfile refid="_your_run_action_8hh">YourRunAction.hh</innerfile>
+    <innerfile refid="_your_run_action_messenger_8hh">YourRunActionMessenger.hh</innerfile>
+    <innerfile refid="_your_stepping_action_8hh">YourSteppingAction.hh</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/"/>
+  </compounddef>
+</doxygen>

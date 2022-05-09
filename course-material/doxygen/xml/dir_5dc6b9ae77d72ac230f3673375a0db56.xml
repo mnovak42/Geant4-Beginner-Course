@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_5dc6b9ae77d72ac230f3673375a0db56" kind="dir">
+    <compoundname>/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/intermediate-application/src</compoundname>
+    <innerfile refid="intermediate-application_2src_2_your_action_initialization_8cc">YourActionInitialization.cc</innerfile>
+    <innerfile refid="intermediate-application_2src_2_your_detector_construction_8cc">YourDetectorConstruction.cc</innerfile>
+    <innerfile refid="intermediate-application_2src_2_your_primary_generator_action_8cc">YourPrimaryGeneratorAction.cc</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/intermediate-application/src/"/>
+  </compounddef>
+</doxygen>

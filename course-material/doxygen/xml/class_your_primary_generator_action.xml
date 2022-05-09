@@ -1,0 +1,243 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="class_your_primary_generator_action" kind="class" language="C++" prot="public">
+    <compoundname>YourPrimaryGeneratorAction</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">G4VUserPrimaryGeneratorAction</basecompoundref>
+    <includes refid="_your_primary_generator_action_8hh" local="no">YourPrimaryGeneratorAction.hh</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_your_primary_generator_action_1a3b45065c125f5d25cf276fc66ff9b691" prot="private" static="no" mutable="no">
+        <type><ref refid="class_your_detector_construction" kindref="compound">YourDetectorConstruction</ref> *</type>
+        <definition>YourDetectorConstruction* YourPrimaryGeneratorAction::fYourDetector</definition>
+        <argsstring></argsstring>
+        <name>fYourDetector</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourPrimaryGeneratorAction.hh" line="94" column="30" bodyfile="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourPrimaryGeneratorAction.hh" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_your_primary_generator_action_1af83c0f002d7c04ad65296da8dd696773" prot="private" static="no" mutable="no">
+        <type>G4ParticleGun *</type>
+        <definition>G4ParticleGun* YourPrimaryGeneratorAction::fParticleGun</definition>
+        <argsstring></argsstring>
+        <name>fParticleGun</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourPrimaryGeneratorAction.hh" line="96" column="30" bodyfile="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourPrimaryGeneratorAction.hh" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_your_primary_generator_action_1a30d6aee8842b619d09beadb68756151c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>YourPrimaryGeneratorAction::YourPrimaryGeneratorAction</definition>
+        <argsstring>(YourDetectorConstruction *det)</argsstring>
+        <name>YourPrimaryGeneratorAction</name>
+        <param>
+          <type><ref refid="class_your_detector_construction" kindref="compound">YourDetectorConstruction</ref> *</type>
+          <declname>det</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourPrimaryGeneratorAction.hh" line="52" column="5" bodyfile="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/src/YourPrimaryGeneratorAction.cc" bodystart="10" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_your_primary_generator_action_1a26c19caf885cd8f31bb56d6b810d45c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>YourPrimaryGeneratorAction::~YourPrimaryGeneratorAction</definition>
+        <argsstring>() override</argsstring>
+        <name>~YourPrimaryGeneratorAction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourPrimaryGeneratorAction.hh" line="53" column="5" bodyfile="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/src/YourPrimaryGeneratorAction.cc" bodystart="21" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="class_your_primary_generator_action_1a8eedfb46f76a99646a682f2469ccc9cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void YourPrimaryGeneratorAction::GeneratePrimaries</definition>
+        <argsstring>(G4Event *evt) override</argsstring>
+        <name>GeneratePrimaries</name>
+        <param>
+          <type>G4Event *</type>
+          <declname>evt</declname>
+        </param>
+        <briefdescription>
+<para>It&apos;s interface method to generate primary particles. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>(Pure) virtual method to generata primary events. This method will be invoked from the G4RunManager whenever a new event is required.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>[in:out]</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>evt Pointer to the <computeroutput>G4Event</computeroutput> object to be filled with primaries. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourPrimaryGeneratorAction.hh" line="63" column="12" bodyfile="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/src/YourPrimaryGeneratorAction.cc" bodystart="26" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="class_your_primary_generator_action_1ad176abbaf7c30c85d9e8a85e8fbb498a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>G4ParticleGun *</type>
+        <definition>G4ParticleGun* YourPrimaryGeneratorAction::GetParticleGun</definition>
+        <argsstring>()</argsstring>
+        <name>GetParticleGun</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourPrimaryGeneratorAction.hh" line="70" column="20" bodyfile="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourPrimaryGeneratorAction.hh" bodystart="70" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="class_your_primary_generator_action_1ae95d92b178d3f26b833e348449950716" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const G4String &amp;</type>
+        <definition>const G4String &amp; YourPrimaryGeneratorAction::GetParticleName</definition>
+        <argsstring>() const</argsstring>
+        <name>GetParticleName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourPrimaryGeneratorAction.hh" line="73" column="20" bodyfile="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/src/YourPrimaryGeneratorAction.cc" bodystart="50" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="class_your_primary_generator_action_1aa31147bc48777a798b54e8d48a914a4f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>G4double</type>
+        <definition>G4double YourPrimaryGeneratorAction::GetParticleEnergy</definition>
+        <argsstring>() const</argsstring>
+        <name>GetParticleEnergy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourPrimaryGeneratorAction.hh" line="76" column="21" bodyfile="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/src/YourPrimaryGeneratorAction.cc" bodystart="55" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="class_your_primary_generator_action_1aed5678e0675ef31507bd028b8903d817" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void YourPrimaryGeneratorAction::SetDefaultKinematic</definition>
+        <argsstring>()</argsstring>
+        <name>SetDefaultKinematic</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourPrimaryGeneratorAction.hh" line="79" column="21" bodyfile="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/src/YourPrimaryGeneratorAction.cc" bodystart="31" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="class_your_primary_generator_action_1adf059d6b880334e42e38a60a71fcf0db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void YourPrimaryGeneratorAction::UpdatePosition</definition>
+        <argsstring>()</argsstring>
+        <name>UpdatePosition</name>
+        <briefdescription>
+<para>Public method to set the position of the particle gun. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The detector might be resized by the user between its construction and the start of the run. This method can be invoked (form <ref refid="class_your_run_action_1adeb5ae9e1c62b96eb5bfb273640af605" kindref="member">YourRunAction::BeginOfRunAction()</ref>) at the begin of the run in order to ensure the proper position of the gun. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourPrimaryGeneratorAction.hh" line="88" column="21" bodyfile="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/src/YourPrimaryGeneratorAction.cc" bodystart="44" bodyend="47"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>M. Novak </para>
+</simplesect>
+<simplesect kind="date"><para>December 2019</para>
+</simplesect>
+Implementation of the <computeroutput>Geant4</computeroutput> <computeroutput>G4VUserPrimaryGeneratorAction</computeroutput> <bold>mandatory interface</bold> for this user application.</para>
+<para>Generation of primary particles of the application must be implemented in the <ref refid="class_your_primary_generator_action_1a8eedfb46f76a99646a682f2469ccc9cd" kindref="member">GeneratePrimaries()</ref> interface. This interface method is invoked by the G4RunManager::GenerateEvent() whenever a new event is needed.</para>
+<para>The construction and registration of the primary generator interface of the application is done in the implementation of the <bold>mandatory</bold> G4VUserActionInitialization (<ref refid="class_your_action_initialization" kindref="compound">YourActionInitialization</ref>).</para>
+<para>An instance of this primary generator object <bold>must be</bold> created and set in the implementation of the G4VUserActionInitialization::Build() interface method. This is done in <ref refid="class_your_action_initialization_1ac3d431fd67d9f52e173c18ee19b84c02" kindref="member">YourActionInitialization::Build()</ref> in this application.</para>
+<para><simplesect kind="note"><para>each worker thread has their own object form this primary generator since <ref refid="class_your_action_initialization_1ac3d431fd67d9f52e173c18ee19b84c02" kindref="member">YourActionInitialization::Build()</ref> interface method is invoked by each thread.</para>
+</simplesect>
+<simplesect kind="note"><para>we keep the pointer to the detector object in order to be able to set the primary generator gun position dynamically. This can be done anytime by invoking the <ref refid="class_your_primary_generator_action_1adf059d6b880334e42e38a60a71fcf0db" kindref="member">UpdatePosition()</ref> method. </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>YourPrimaryGeneratorAction</label>
+        <link refid="class_your_primary_generator_action"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>G4VUserPrimaryGeneratorAction</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="5">
+        <label>YourDetectorMessenger</label>
+        <link refid="class_your_detector_messenger"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>fYourDetector</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>YourPrimaryGeneratorAction</label>
+        <link refid="class_your_primary_generator_action"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>fYourDetector</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>G4VUserDetectorConstruction</label>
+      </node>
+      <node id="2">
+        <label>G4VUserPrimaryGeneratorAction</label>
+      </node>
+      <node id="6">
+        <label>G4UImessenger</label>
+      </node>
+      <node id="3">
+        <label>YourDetectorConstruction</label>
+        <link refid="class_your_detector_construction"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>fDetMessenger</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourPrimaryGeneratorAction.hh" line="46" column="1" bodyfile="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/include/YourPrimaryGeneratorAction.hh" bodystart="46" bodyend="98"/>
+    <listofallmembers>
+      <member refid="class_your_primary_generator_action_1af83c0f002d7c04ad65296da8dd696773" prot="private" virt="non-virtual"><scope>YourPrimaryGeneratorAction</scope><name>fParticleGun</name></member>
+      <member refid="class_your_primary_generator_action_1a3b45065c125f5d25cf276fc66ff9b691" prot="private" virt="non-virtual"><scope>YourPrimaryGeneratorAction</scope><name>fYourDetector</name></member>
+      <member refid="class_your_primary_generator_action_1a8eedfb46f76a99646a682f2469ccc9cd" prot="public" virt="non-virtual"><scope>YourPrimaryGeneratorAction</scope><name>GeneratePrimaries</name></member>
+      <member refid="class_your_primary_generator_action_1aa31147bc48777a798b54e8d48a914a4f" prot="public" virt="non-virtual"><scope>YourPrimaryGeneratorAction</scope><name>GetParticleEnergy</name></member>
+      <member refid="class_your_primary_generator_action_1ad176abbaf7c30c85d9e8a85e8fbb498a" prot="public" virt="non-virtual"><scope>YourPrimaryGeneratorAction</scope><name>GetParticleGun</name></member>
+      <member refid="class_your_primary_generator_action_1ae95d92b178d3f26b833e348449950716" prot="public" virt="non-virtual"><scope>YourPrimaryGeneratorAction</scope><name>GetParticleName</name></member>
+      <member refid="class_your_primary_generator_action_1aed5678e0675ef31507bd028b8903d817" prot="public" virt="non-virtual"><scope>YourPrimaryGeneratorAction</scope><name>SetDefaultKinematic</name></member>
+      <member refid="class_your_primary_generator_action_1adf059d6b880334e42e38a60a71fcf0db" prot="public" virt="non-virtual"><scope>YourPrimaryGeneratorAction</scope><name>UpdatePosition</name></member>
+      <member refid="class_your_primary_generator_action_1a30d6aee8842b619d09beadb68756151c" prot="public" virt="non-virtual"><scope>YourPrimaryGeneratorAction</scope><name>YourPrimaryGeneratorAction</name></member>
+      <member refid="class_your_primary_generator_action_1a26c19caf885cd8f31bb56d6b810d45c7" prot="public" virt="non-virtual"><scope>YourPrimaryGeneratorAction</scope><name>~YourPrimaryGeneratorAction</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

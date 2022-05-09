@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="_your_event_action_8cc" kind="file" language="C++">
+    <compoundname>YourEventAction.cc</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_your_event_action_8hh" kindref="compound">YourEventAction.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;G4RunManager.hh&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_your_run_8hh" kindref="compound">YourRun.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal">YourEventAction::YourEventAction()</highlight></codeline>
+<codeline lineno="8"><highlight class="normal">:<sp/>G4UserEventAction(),</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/>fEdepPerEvt(0.0),</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/>fChTrackLengthPerEvt(0.0)<sp/>{}</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal">YourEventAction::~YourEventAction()<sp/>{}</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Beore<sp/>each<sp/>event:<sp/>reset<sp/>per-event<sp/>variables</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_your_event_action_1adf3fd381562d250a5b6d7dab456e3d6a" kindref="member">YourEventAction::BeginOfEventAction</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>G4Event*<sp/></highlight><highlight class="comment">/*anEvent*/</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/>fEdepPerEvt<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0.0;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/>fChTrackLengthPerEvt<sp/><sp/>=<sp/>0.0;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">//<sp/>After<sp/>each<sp/>event:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">//<sp/>fill<sp/>the<sp/>data<sp/>collected<sp/>for<sp/>this<sp/>event<sp/>into<sp/>the<sp/>Run<sp/>global<sp/>(thread<sp/>local)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="comment">//<sp/>data<sp/>Run<sp/>data<sp/>object<sp/>(i.e.<sp/>into<sp/>YourRun)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_your_event_action_1a231bc50b48323bc82e93a58547a2bdb6" kindref="member">YourEventAction::EndOfEventAction</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>G4Event*<sp/></highlight><highlight class="comment">/*anEvent*/</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>get<sp/>the<sp/>current<sp/>Run<sp/>object<sp/>and<sp/>cast<sp/>it<sp/>to<sp/>YourRun<sp/>(because<sp/>for<sp/>sure<sp/>this<sp/>is<sp/>its<sp/>type)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><ref refid="class_your_run" kindref="compound">YourRun</ref>*<sp/>currentRun<sp/>=<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal"><sp/><ref refid="class_your_run" kindref="compound">YourRun</ref>*<sp/></highlight><highlight class="keyword">&gt;</highlight><highlight class="normal"><sp/>(<sp/>G4RunManager::GetRunManager()-&gt;GetNonConstCurrentRun()<sp/>);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>add<sp/>the<sp/>quantities<sp/>to<sp/>the<sp/>(thread<sp/>local)<sp/>run<sp/>global<sp/>YourRun<sp/>object</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>currentRun-&gt;AddEnergyDepositPerEvent(<sp/>fEdepPerEvt<sp/>);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>currentRun-&gt;AddChTrackLengthPerEvent(<sp/>fChTrackLengthPerEvt<sp/>);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>currentRun-&gt;FillEdepHistogram(<sp/>fEdepPerEvt<sp/>);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/Users/mnovak/projects/Geant4_Tutorial/Geant4-Beginner_Course/applications/final-application/src/YourEventAction.cc"/>
+  </compounddef>
+</doxygen>
