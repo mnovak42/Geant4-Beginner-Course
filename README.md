@@ -6,4 +6,4 @@ final applciation is fully funtional, the course material and the code documenta
 The repository will be public again when that point is reached.
 
 
-The **[(very limited) documentation is avaiable here](https://geant4-beginner-course.readthedocs.io/en/latest/index.html#)**. We will use only the **[Preliminaries](https://geant4-beginner-course.readthedocs.io/en/latest/course-doc/Preliminaries.html)** setion during the current course!
+The **[(very limited) documentation is avaiable here](https://geant4-beginner-course.readthedocs.io/en/latest/index.html#)**. We will use only its **[Preliminaries](https://geant4-beginner-course.readthedocs.io/en/latest/course-doc/Preliminaries.html)** setion during the current course! The intermediate and final applications (as well as some extra codes for the preliminaries) are avaiable under the ``applications`` directory.    
